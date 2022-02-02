@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="header">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+    
+}
+
+#banner 
+{
+    background-color: white;
+    color: black;
+    padding: 3%;
+    
+}
+
+.banner-title
+{   
+    margin-top: 100px;
+}
+
+.sub-text 
+{
+    font-weight:500px;
+    font-size: 20px;
+}
+
+#services
+{
+    background-color: #1e4684;
+    color: white;
+    padding: 3%;
+    
+}
+
+.services
+{
+    padding: 20px;
+    
+}
+
+.services-container
+{
+    margin: auto;
+    
+}
+
+.services-container .card
+{
+    width: 300px;
+    height: 480px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0);
+}
+
+.services-container .card .circle
+{
+    width: 100%;
+    height: 100%;
+    background-color: #30A0E0;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.services-container .card .circle h2 {
+    color:#fff;
+    font-size: 2em;
+    text-align: center;
+    padding: 40px 0;    
+}
+
+.services-container .card .content
+{
+    bottom: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.services-container .card .content p
+{
+    color:#666;
+}
+
+.services-container .card .content a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #30A0E0;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.service-img
+{
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 3%;
+}
+
+.services h4
+{
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.services p
+{
+    text-decoration: gray;
+}
+
+#about{
+    background-color: #ffbd59;
+    color: bl;
+}
+
+#description{
+    background: #0f2649;
+    
+    color: white;
+    padding: 3%;
+    
+}
+
+.banner-img{
+    
+    width: 150px;
+    padding-bottom:30px;
+    animation: image-animation 2s;
+
+}
+
+@keyframes image-animation {
+    10% {
+        height: 2px;
+        width: 5px;
+    }
+}
+
+#compatibility
+{
+    background: #0f2649;
+    color: white;
+    padding: 8%;
+}
+
+#functionality
+{
+    background: white;
+    color: #0f2649;
+    padding: 3%;
+}
+
+.outlined-box
+{
+    border-color: #1e4684;
+    border-style: solid; 
+    border-width: 5px;  
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+.column
+{
+    padding: 2%;
+}
+
+.inside-img {
+    
+    width: 200px;   
+    padding: 10px;
+}
+
+#guide
+{
+    padding: 5% ;
+    text-decoration: dotted;
+    background-color: whitesmoke;
+}
+
+
+.img-guide
+{
+    width: 100%;
+    
+}
+
+.icon {
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 5px;
+  left: 5px;
+  padding: 3px;
+}
+
+.smb {
+
+    width: 25%;
+    padding-bottom:30px;
+    animation: image-animation 2s;
+}
+
+.comp-image
+{
+    width: 25%;
+    padding-bottom: 30px;
+    animation: image-animation 2s;
+}
+
+
+.top
+{
+    width:100%;
+    height:50%;
+    object-fit:fill;
+    
+}
+
+
+.top-container
+{
+    width:100%;
+    height:50%;
+}
+
+.title::after{
+    content: '';
+    background-color: #0f2649;
+    height: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(63px);
+}
+
+
+    </style>
+    
+
+</head>
+<body>
+ <!-- Banner Section -->
+
+ <section id="top-area">
+    <div class="top-container">
+        <img src="images/top.png" alt="" class="top">
+    </div>
+ </section>
+ 
+ 
+ <section id="description">
+
+    <div class="container text-center">
+     <div class="row">
+       <div class="col-lg-4 col-md-4 col-sm-12 column">
+         <img src="images/check.png" class="banner-img" alt="">
+         <h2>Secure</h2>
+         <p>The ideal solution when security policies disallow conventional file sharing</p>
+       </div>
+
+       <div class="col-lg-4 col-md-4 col-sm-12 column">
+        <img src="images/wrench.png" class="banner-img" alt="">
+        <h2>Simple</h2>
+        <hp>WIN32 C++ Background Utility running on the device</hp>
+      </div>
+
+       <div class="col-lg-4 col-md-4 col-sm-12 column">
+         <img src="images/desktop.png" class="banner-img" alt="">
+         <h2>Unlimited</h2>
+         <p>Windows service with unlimited client application</p>
+       </div>
+
+      
+     </div>
+  </section>
+
+  
+
+  <section id="functionality">
+    <!-- Compatibility details-->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img src="images/SMB.png" class="smb" alt="">
+          <h4>No SMB1/SMB2</h4>
+          <h6>Eliminate the need to reduce Server Message Block security</h6>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img src="images/encryption.png" class="comp-image" alt="Encryption">
+          <h4>AES Encryption</h4>
+          <h6>AES 256 Encrypted TCP File Transfer for state-of-the-art security</h6>
+      </div>
+      </div>
+    </div>
+    
+</section>
+ 
+
+   
+   <!-- Guide -->
+  
+   <section id="guide">
+    <div class="container text-capitalize text-center">
+
+      <h1 class="text-center title">HOW IT WORKS</h1>
+      <div class="container">
+        <img src="images/guide.png" class="img-guide"alt="">
+      </div>
+    </div>
+  </section>
+
+ <!-- Product Services Section -->
+
+ <section id="compatibility">
+
+  <!-- Compatibility details-->
+
+  <h1 class="text-center title">COMPATIBILITIES</h1>
+  <div class="container text-center">
+      
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <img src="images/pc.png" class="comp-image" alt="">
+        <h2>Client/Server Compatibility</h2>
+        <h6>Windows 10, 11, 
+            Server 2012-2022</h6>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <img src="images/conveyor.png" class="comp-image" alt="">
+        <h2>Device 
+            Compatibility</h2>
+        <h6>Windows (and Embedded) 95, 98, XP, Vista, 7, 8, 
+            10/10 IoT, 11. Linux*</h6>
+    </div>
+    </div>
+  </div>
+         
+  
+ </section>
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  
+<script>
+
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('image-animation');
+    }
+  });
+});
+
+observer.observe(document.querySelector('.comp-image'));
+</script>
+
+
+
+</body>
+</html>
