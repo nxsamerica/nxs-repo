@@ -133,8 +133,9 @@ body
 }
 
 #description{
-    background: #0f2649;
-    
+    background: linear-gradient(-45deg, #3ce7bc, #23a6d5, #0f2649);
+    background-size: 200% 400%;
+    animation: gradient 5s ease infinite;
     color: white;
     padding: 3%;
     
@@ -157,7 +158,9 @@ body
 
 #compatibility
 {
-    background: #0f2649;
+    background: linear-gradient(-45deg, #3ce7bc, #23a6d5, #0f2649);
+    background-size: 200% 400%;
+    animation: gradient 5s ease infinite;
     color: white;
     padding: 8%;
 }
@@ -214,14 +217,14 @@ body
 
 .smb {
 
-    width: 25%;
+    width: 40%;
     padding-bottom:30px;
     animation: image-animation 2s;
 }
 
 .comp-image
 {
-    width: 25%;
+    width: 40%;
     padding-bottom: 30px;
     animation: image-animation 2s;
 }
@@ -236,12 +239,6 @@ body
 }
 
 
-.top-container
-{
-    width:100%;
-    height:50%;
-}
-
 .title::after{
     content: '';
     background-color: #0f2649;
@@ -254,6 +251,123 @@ body
     transform: translateY(63px);
 }
 
+.top-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0f2649;
+}
+
+
+
+#triangle-left {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-right: 100px solid red;
+      border-bottom: 50px solid transparent;
+    }
+
+  #triangle-right {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-left: 100px solid red;
+      border-bottom: 50px solid transparent;
+    }
+
+
+                
+.arrow-pointer {
+  width: 250px;
+  height: 50px;
+  background: white;
+  position: relative;
+
+}
+
+.arrow-pointer:after {
+    content: '';
+    position: absolute;
+    left: -25px; bottom: 0; width: 0; height: 0;
+    border-right: 25px solid white;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+  }
+
+  .arrow-pointer:before {
+    content: '';
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid white;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+  }
+
+  .gradient-bg {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 400%;
+  animation: gradient 2s ease infinite;
+  
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.absolute {
+  position: absolute;
+  width: 150px;
+  height: 350px;
+  background-color: #900;
+  border-color: #900;
+  opacity: 0.7;
+}
+
+.relative {
+  position: relative;
+  height: 80px;
+  background-color: whitesmoke;
+  opacity: 0.7;
+}
+
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
+}
 
     </style>
     
@@ -262,11 +376,11 @@ body
 <body>
  <!-- Banner Section -->
 
- <section id="top-area">
+
     <div class="top-container">
-        <img src="images/top.png" alt="" class="top">
-    </div>
- </section>
+        <img src="images/top.png" alt="Legacy-Link-Pro-Logo" width="100%">
+    </div> 
+
  
  
  <section id="description">
@@ -276,19 +390,19 @@ body
        <div class="col-lg-4 col-md-4 col-sm-12 column">
          <img src="images/check.png" class="banner-img" alt="">
          <h2>Secure</h2>
-         <p>The ideal solution when security policies disallow conventional file sharing</p>
+         <p>The ideal solution when security policies disallow SMB1/SMB2 protocols for file sharing</p>
        </div>
 
        <div class="col-lg-4 col-md-4 col-sm-12 column">
         <img src="images/wrench.png" class="banner-img" alt="">
         <h2>Simple</h2>
-        <hp>WIN32 C++ Background Utility running on the device</hp>
+        <p>Effortless communication with seamless integration to your existing network</p>
       </div>
 
        <div class="col-lg-4 col-md-4 col-sm-12 column">
          <img src="images/desktop.png" class="banner-img" alt="">
-         <h2>Unlimited</h2>
-         <p>Windows service with unlimited client application</p>
+         <h2>Scalable</h2>
+         <p>License as many devices as you need with unlimited client applications</p>
        </div>
 
       
@@ -303,16 +417,19 @@ body
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <img src="images/SMB.png" class="smb" alt="">
-          <h4>No SMB1/SMB2</h4>
-          <h6>Eliminate the need to reduce Server Message Block security</h6>
+          
+          <h3>No SMB1/SMB2</h3>
+          <h5>Eliminate the need to reduce Server Message Block security</h5>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <img src="images/encryption.png" class="comp-image" alt="Encryption">
-          <h4>AES Encryption</h4>
-          <h6>AES 256 Encrypted TCP File Transfer for state-of-the-art security</h6>
+          <h3>AES Encryption</h3>
+          <h5>AES 256 Encrypted TCP File Transfer for state-of-the-art security</h5>
       </div>
       </div>
     </div>
+    
+
     
 </section>
  
@@ -322,12 +439,11 @@ body
   
    <section id="guide">
     <div class="container text-capitalize text-center">
-
       <h1 class="text-center title">HOW IT WORKS</h1>
-      <div class="container">
-        <img src="images/guide.png" class="img-guide"alt="">
-      </div>
+        <img src="images/guide.png" class="img-guide gradient-bg"alt="">
     </div>
+
+    
   </section>
 
  <!-- Product Services Section -->
@@ -336,22 +452,21 @@ body
 
   <!-- Compatibility details-->
 
-  <h1 class="text-center title">COMPATIBILITIES</h1>
+  <h1 class="text-center">COMPATIBILITIES</h1>
   <div class="container text-center">
       
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <img src="images/pc.png" class="comp-image" alt="">
+        <img src="images/pc.png" class="banner-img" alt="">
         <h2>Client/Server Compatibility</h2>
         <h6>Windows 10, 11, 
             Server 2012-2022</h6>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <img src="images/conveyor.png" class="comp-image" alt="">
+        <img src="images/conveyor.png" class="banner-img" alt="">
         <h2>Device 
             Compatibility</h2>
-        <h6>Windows (and Embedded) 95, 98, XP, Vista, 7, 8, 
-            10/10 IoT, 11. Linux*</h6>
+        <h6>Windows (and Embedded) 95, 98, 2000, XP, Vista, 7, 8, 10/10 IoT, 11. Linux*</h6>
     </div>
     </div>
   </div>
@@ -365,23 +480,19 @@ body
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   
-<script>
-
-const observer = new IntersectionObserver(entries => {
-  // Loop over the entries
-  entries.forEach(entry => {
-    // If the element is visible
-    if (entry.isIntersecting) {
-      // Add the animation class
-      entry.target.classList.add('image-animation');
-    }
-  });
-});
-
-observer.observe(document.querySelector('.comp-image'));
-</script>
-
+ <script>
+    $(window).on('load', function () {
+      $('#loading').hide();
+    }) 
+  </script>
+  
+  
+  
 
 
 </body>
+
+
+  
+
 </html>
