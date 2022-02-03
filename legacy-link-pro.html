@@ -14,6 +14,10 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 body
 {
     font-family: 'Poppins', sans-serif;
@@ -209,6 +213,7 @@ body
     
 }
 
+
 .icon {
   position: relative;
   /* Adjust these values accordingly */
@@ -371,6 +376,7 @@ body
   z-index: 100;
 }
 
+
     </style>
     
 
@@ -459,17 +465,18 @@ body
       
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <img src="images/pc.png" class="banner-img" alt="">
-        <h2>Client/Server Compatibility</h2>
-        <h6>Windows 10, 11, 
-            Server 2012-2022</h6>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
         <img src="images/conveyor.png" class="banner-img" alt="">
         <h2>Device 
             Compatibility</h2>
         <h6>Windows (and Embedded) 95, 98, 2000, XP, Vista, 7, 8, 10/10 IoT, 11. Linux*</h6>
     </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <img src="images/pc.png" class="banner-img" alt="">
+        <h2>Client/Server Compatibility</h2>
+        <h6>Windows 10, 11, 
+            Server 2012-2022</h6>
+      </div>
+      
     </div>
   </div>
          
@@ -487,8 +494,6 @@ body
       $('#loading').hide();
     }) 
   </script>
-  
-  
   
 
 
