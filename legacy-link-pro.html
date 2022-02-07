@@ -375,24 +375,31 @@ body
 
 .top-container {
   position: relative;
-  text-align: center;
-  color: white;
+ /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
   width: 100%;
-  height: 600px;
-  background: no-repeat;
-  background-image: url("images/top.png");
   
 }
 
-.top-container img{
+.top-container-bg
+{
+  max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.top-container-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 50%;
+  max-width: 80%;
+    height: auto;
+    width: auto\9; /* ie8 */
   
 }
-
-
-
-
-
 
 /* Centered text */
 .centered {
@@ -515,9 +522,14 @@ body
 
 
     <div class="top-container" >
-      <div class="container "data-aos="fade-in" data-aos-duration="1000s">
-      <img src="images/llp-logo.png" alt="" class="centered" >
+      <div class="img-overlay-wrap">
+        <img src="images/top.png" alt="" class="top-container-bg">
+
+        <div class="container "data-aos="fade-in" data-aos-duration="1000s">
+          <img src="images/llp-logo.png" alt="" class="centered top-container-img" >
+          </div>
       </div>
+      
     </div> 
 
  
@@ -590,6 +602,7 @@ body
    <section id="guide" data-aos="fade-left" data-aos-duration="1000s">
     <div class="container text-capitalize text-center">
       <h1 class="text-center title">HOW IT WORKS</h1>
+      <br><br>
         <img src="images/guide.png" class="img-guide gradient-bg"alt="">
     </div>
 
@@ -598,13 +611,14 @@ body
 
  <!-- Product Services Section -->
 
- <section id="compatibility" data-aos="fade-up" data-aos-duration="2000s">
+ <section id="compatibility">
 
   <!-- Compatibility details-->
 
-  <h1 class="text-center">COMPATIBILITIES</h1>
-  <div class="container text-center">
-      
+ 
+  <div class="container text-center" data-aos="fade-left" data-aos-duration="2000s">
+    <h1 class="text-center title">COMPATIBILITIES</h1>
+    <br><br>
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12">
         <img src="images/conveyor.png" class="banner-img" alt="">
