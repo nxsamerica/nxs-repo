@@ -8,14 +8,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
 
+
+.img-overlay-wrap {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
+}
+
+
+.img-overlay-wrap svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 18%;
+  text-align: center;
+
+}
+
+svg {
+	 width: 100px;
+	 display: block;
+	 margin: 40px auto 0;
+}
+ .path {
+	 stroke-dasharray: 1000;
+	 stroke-dashoffset: 0;
+}
+ .path.circle {
+	 -webkit-animation: dash 2s ease-in-out;
+	 animation: dash 2s ease-in-out infinite;
+}
+ .path.line {
+	 stroke-dashoffset: 1000;
+	 -webkit-animation: dash 2s 1s ease-in-out forwards;
+	 animation: dash 3s 1s ease-in-out forwards infinite;
+}
+
+
+ @-webkit-keyframes dash {
+	 0% {
+		 stroke-dashoffset: 1000;
+	}
+	 100% {
+		 stroke-dashoffset: 0;
+	}
+}
+ @keyframes dash {
+	 0% {
+		 stroke-dashoffset: 1000;
+	}
+	 100% {
+		 stroke-dashoffset: 0;
+	}
+}
+ 
+
+
+.crossmark__circle.animateElement {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #ff0000;
+  fill: none;
+ animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.crossmark.animateElement {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #ff0000;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #ff0000;
+  animation: fillred .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.crossmark__check.animateElement {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+.cross__path.animateElement {
+  stroke: #ffffff;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  transform-origin: 50% 50% 0;
+}
+.cross__path--right.animateElement {
+  animation: 0.3s ease 0.8s normal forwards 1 running stroke;
+}
+.cross__path--left.animateElement {
+  animation: 1s ease 0.8s normal forwards 1 running stroke;
+}
+@keyframes fillred {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #ff0000;
+  }
+  
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
 html {
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body
@@ -151,7 +267,7 @@ body
     
     width: 150px;
     padding-bottom:30px;
-    animation: image-animation 2s;
+   
 
 }
 
@@ -226,7 +342,7 @@ body
 
     width: 40%;
     padding-bottom:30px;
-    animation: image-animation 2s;
+    
 }
 
 .comp-image
@@ -263,7 +379,21 @@ body
   text-align: center;
   color: white;
   width: 100%;
+  height: 600px;
+  background: no-repeat;
+  background-image: url("images/top.png");
+  
 }
+
+.top-container img{
+  width: 50%;
+  
+}
+
+
+
+
+
 
 /* Centered text */
 .centered {
@@ -385,8 +515,10 @@ body
  <!-- Banner Section -->
 
 
-    <div class="top-container">
-        <img src="images/top.png" alt="Legacy-Link-Pro-Logo" width="100%">
+    <div class="top-container" >
+      <div class="container "data-aos="fade-in" data-aos-duration="1000s">
+      <img src="images/llp-logo.png" alt="" class="centered" >
+      </div>
     </div> 
 
  
@@ -394,9 +526,9 @@ body
  <section id="description">
 
     <div class="container text-center">
-     <div class="row">
+     <div class="row " data-aos="fade-up" data-aos-duration="1000s">
        <div class="col-lg-4 col-md-4 col-sm-12 column">
-         <img src="images/check.png" class="banner-img" alt="">
+         <img src="images/check.png" class="banner-img"  alt="">
          <h2>Secure</h2>
          <p>The ideal solution when security policies disallow SMB1/SMB2 protocols for file sharing</p>
        </div>
@@ -422,9 +554,20 @@ body
   <section id="functionality">
     <!-- Compatibility details-->
     <div class="container text-center">
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-duration="2000s">
         <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="img-overlay-wrap">
           <img src="images/SMB.png" class="smb" alt="">
+          
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+            <circle class="path circle" fill="none" stroke="#FF0000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+            <line class="path line" fill="none" stroke="#FF0000" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
+            <line class="path line" fill="none" stroke="#FF0000" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
+          </svg>
+          
+        </div>
+ 
+ 
           
           <h3>No SMB1/SMB2</h3>
           <h5>Eliminate the need to reduce Server Message Block security</h5>
@@ -445,7 +588,7 @@ body
    
    <!-- Guide -->
   
-   <section id="guide">
+   <section id="guide" data-aos="fade-left" data-aos-duration="1000s">
     <div class="container text-capitalize text-center">
       <h1 class="text-center title">HOW IT WORKS</h1>
         <img src="images/guide.png" class="img-guide gradient-bg"alt="">
@@ -456,7 +599,7 @@ body
 
  <!-- Product Services Section -->
 
- <section id="compatibility">
+ <section id="compatibility" data-aos="fade-up" data-aos-duration="2000s">
 
   <!-- Compatibility details-->
 
@@ -493,9 +636,19 @@ body
     $(window).on('load', function () {
       $('#loading').hide();
     }) 
+
+
+
+
+
+
+
   </script>
   
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
