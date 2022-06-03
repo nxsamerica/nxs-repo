@@ -10,10 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="">
 
   <title>Nexas America</title>
   <style>
@@ -35,9 +32,7 @@
       margin: 0;
       top: 0;
       left: 0;
-
       background-color: #deebff;
-
     }
 
 
@@ -55,8 +50,6 @@
     ul {
       list-style-type: none;
     }
-
-
 
 
 
@@ -149,6 +142,9 @@
 
 
 
+
+    
+
     .social-icons img {
       width: 100px;
       padding: 10px;
@@ -225,6 +221,7 @@
 
 
     }
+
 
 
     .service-img {
@@ -364,11 +361,11 @@
       transition: transform .45s ease, background .45s ease;
       overflow: hidden;
       border-radius: 15px;
-      border-color: #25254dd3;
+      border-color: gainsboro;
       min-height: 450px;
       width: 300px;
       color: #25254D;
-      background-color: #deebff;
+      background-color: white;
       flex-direction: row;
       justify-content: space-around;
       padding: 1%;
@@ -539,7 +536,6 @@
     }
 
 
-
     /* Banner */
 
 
@@ -594,9 +590,9 @@
     }
 
     .banner-title-1 {
-      font-size: 30px;
+      font-size: 40px;
       color: #011068;
-      padding-right: 6%;
+     
 
     }
 
@@ -614,14 +610,7 @@
 
     }
 
-    .e-wrapper {
-      display: flex;
-    }
-
-    .e-carousel {
-      align-items: center;
-    }
-
+    
     .banner-container-1 {
       background-color: #25254D;
       color: white;
@@ -632,7 +621,7 @@
     .b-text {
       font-size: 20px;
       text-align: left;
-      padding: 5%;
+      padding: 3%;
     }
 
     .b-img {}
@@ -673,284 +662,235 @@
 <body>
 
   <!-- Navbar  -->
+]  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/true logo eps exact copy.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/true logo eps exact copy.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown" size="10">
+          <a class="nav-link dropdown-toggle " href="https://nxsamerica.github.io/nxs-website/products.html" id="navbarDropdown" role="button"
+            aria-expanded="false" >
+            Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-          <li class="nav-item dropdown" size="10">
-            <a class="nav-link dropdown-toggle " href="https://nxsamerica.github.io/nxs-website/products.html" id="navbarDropdown" role="button"
-              aria-expanded="false" >
-              Products
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-              <li>
-                <div class="container">
-                  <h6>DNC Communication</h6>
-                </div>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/pdm.html">Fusion DNC</a></li>
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/fusion-flashdnc.html">Fusion FlashDNC</a></li>
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/fusion-mobilednc.html">Fusion MobileDNC</a></li>
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/predator-dnc.html">Predator DNC</a></li>
-
+            <li>
+              <div class="container">
+                <h6>DNC Communication</h6>
+              </div>
               <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/pdm.html">Fusion DNC</a></li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/fusion-flashdnc.html">Fusion FlashDNC</a></li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/fusion-mobilednc.html">Fusion MobileDNC</a></li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/predator-dnc.html">Predator DNC</a></li>
+
+            <hr class="dropdown-divider">
 
 
-              <li>
-                <div class="container">
-                  <h6>Machine Monitoring</h6>
-                </div>
-              </li>
+            <li>
+              <div class="container">
+                <h6>Machine Monitoring</h6>
+              </div>
+            </li>
 
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/machine-monitoring.html">DataXchange</dATAg></a></li>
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/pWidgets-master-view.html">pWidgets Master View</a></li>
-
-
-              <hr class="dropdown-divider">
-
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/pdm.html">Production Document Management</dATAg></a></li>
-
-              <hr class="dropdown-divider">
-
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/app-development.html">App Development and Programming </dATAg></a></li>
-
-              
-              <hr class="dropdown-divider">
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/hardware.html">Hardware</a></li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/machine-monitoring.html">DataXchange</dATAg></a></li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/pWidgets-master-view.html">pWidgets Master View</a></li>
 
 
+            <hr class="dropdown-divider">
 
-            </ul>
-          </li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/pdm.html">Production Document Management</dATAg></a></li>
+
+            <hr class="dropdown-divider">
+
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/app-development.html">App Development and Programming </dATAg></a></li>
+
+            
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/hardware.html">Hardware</a></li>
 
 
-          <li class="nav-item">
-            <a class="nav-link active" href="https://nxsamerica.github.io/nxs-website/support.html">Support</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link " href="https://nxsamerica.github.io/nxs-website/technical.html">Technical</a>
-          </li>
+          </ul>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link " href="https://nxsamerica.github.io/nxs-website/technical.html">Blog</a>
-          </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="https://nxsamerica.github.io/nxs-website/events.html" id="navbarDropdown" role="button" aria-expanded="false" >
-              Events
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/news-2.html">News</a></li>
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/trade-shows.html">Tradeshows</a></li>
-              <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/webinars.html">Webinars</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-warning btn-sm" href="https://nxsamerica.github.io/nxs-website/contact-us.html" tabindex="-1">Contact Us</a>
-          </li>
-        </ul>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://nxsamerica.github.io/nxs-website/support.html">Support</a>
+        </li>
 
-      </div>
+        <li class="nav-item">
+          <a class="nav-link " href="https://nxsamerica.github.io/nxs-website/technical.html">Technical</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://nxsamerica.github.io/nxs-website/technical.html">Blog</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="https://nxsamerica.github.io/nxs-website/events.html" id="navbarDropdown" role="button" aria-expanded="false" >
+            Events
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/news-2.html">News</a></li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/trade-shows.html">Tradeshows</a></li>
+            <li><a class="dropdown-item" href="https://nxsamerica.github.io/nxs-website/webinars.html">Webinars</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-warning btn-sm" href="https://nxsamerica.github.io/nxs-website/contact-us.html" tabindex="-1">Contact Us</a>
+        </li>
+      </ul>
+
     </div>
-  </nav>
+  </div>
+</nav>
+
+
+
 
 
 
   <!-- Products & Services-->
 
 
-
-
   <section id="services">
 
 
+
     <div class="wrapper">
-
-
       <div class="container">
+        <h2 class="general-title">Predator™</h2>
+        <h5 class="display-6 banner-title-1">
+          SOFTWARE INC
+        </h5>
         <div class="title">
-          <h1 class="general-title">Events</h1>
-          <p class="sub-text">Nexas events are a great way to learn about our products and services, meet our staff and
-            get specific advice on the best way to enhance productivity in your shop. Whether you come see us at an
-            upcoming trade show, attend one of our informative webinars or just stay updated on Nexas news you can be
-            sure you're at the cutting edge of the latest technology.</p>
         </div>
+      </div>
+    </div>
 
-        <div class="services-container">
-
-          <div class="card card-has-bg">
-            <div class="d-flex flex-column">
-              <div class="card-body">
-                <div>
-                  <img src="images/news.png" alt="" class="service-img">
-                </div>
-
-                <small class="card-meta mb-2">Educate</small>
-                <h3 class="">News</h3>
-                <small>Stay informed with the latest and greatest from Nexas. Info such as new technology, featured
-                  articles or just updates about our team will all appear here.
-                </small>
-
-              </div>
-              <div class="card-footer">
-                <span class="link-text">
-                  Learn more
-                  <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
-                      fill="#25254D" />
-                  </svg>
-                </span>
-
-              </div>
-            </div>
-          </div>
+    <div id="banner">
 
 
+      <div class="banner-container banner-1">
+        <p class="banner-title-1">
+          Predator DNC
+        </p>
+        <p class="b-text">
 
-          <div class="card card-has-bg">
-            <div class="d-flex flex-column">
-              <div class="card-body">
-                <div>
-                  <img src="images/tradeshoww.png" alt="" class="service-img">
-                </div>
+          Predator DNC software is designed to network all of your CNC machines, robots, PLCs, test stands and part
+          markers. Predator DNC manages your CNC programs, CNC variables, offsets and parameters. It supports a wide
+          range of CNC communications for dripfeeding, downloading, and uploading via parallel, RS-232, RS-422 Ethernet
+          and wireless Ethernet.
 
-                <small class="card-meta mb-2">Meet</small>
-                <h3 class="">Tradeshows</h3>
-                <small>Come visit us at one of our exhibitor booths to get a first-hand look at what Nexas has to offer
-                  your shop. Speak with our specialist, see products demos and take advantage of special offers at an
-                  upcoming trade show.
-                </small>
+        </p>
 
-              </div>
-              <div class="card-footer">
-                <span class="link-text">
-                  Learn more
-                  <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
-                      fill="#25254D" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-          </div>
+        <p ></p>
+
+        <p class="b-text">Nexas America is the northeast authorized reseller of Predator Software products offering full sales,
+          service, training and support.</p>
+
+        <img src="images/predator-auth-reseller.jpg" alt="">
+
+
+      </div>
+      <div class="banner-container banner-2">
+        <img src="images/predator-dnc.png" class="des-img" alt="">
+      </div>
+    </div>
 
 
 
-          <div class="card card-has-bg">
-            <div class="d-flex flex-column">
-              <div class="card-body">
-                <div>
-                  <img src="images/webinars.png" alt="" class="service-img">
-                </div>
+    <div id="banner" class="banner-container-1">
 
-                <small class="card-meta mb-2">Educate</small>
-                <h3 class="">Webinars</h3>
+      <div class="banner-container banner-1">
+        <h3 class="display-5">Features:</h3>
 
-                <small>Nexas America holds scheduled webinars to help you better understand our specific products and
-                  services. Click here to sign-up for one of our sessions today.</small>
+        <ul class="b-text">
+          <li>1 Network for all your CNC machines, robots, PLCs and part markers</li>
+          <li>Send, Receive and Dripfeed DNC programs</li>
+          <li>Supports Wireless, Ethernet, RS-232 and Parallel I/O</li>
+          <li>Improve CNC program and CNC variable management</li>
+          <li>Improve CNC offset and CNC parameter management</li>
+          <li>Eliminate walking back and forth from your CNC</li>
+          <li>Supports RFID chips, Bar Codes or QR codes for Remote Requests™</li>
+          <li>Add Predator PDM for secure revision control</li>
+          <li>Upgrade to Predator MDC or Predator RCM</li>
 
-              </div>
-              <div class="card-footer">
-                <span class="link-text">
-                  Learn more
-                  <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
-                      fill="#25254D" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+
+        </ul>
+
+
+
+        <p></p>
+
+        <p class="b-text">Download a free trial of Predator DNC <a href="#">here.</a></p>
 
 
 
 
 
+      </div>
 
-        <!-- If already have a DNC -->
+      <div class="banner-container banner-2">
+        <img src="images/predator-features.gif" class="" alt="">
+      </div>
 
-
-        <div id="banner">
-
-          <div class="banner-container banner-2">
-            <div id="carouselExampleIndicators" class="carousel slide e-carousel" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-              </ol>
-              
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/eastec-2013.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>EASTEC 2013</p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/MFG4-2014.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>MFG4 2014</p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/MFG4-2014-1.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>MFG4 2014</p>
-                  </div>
-                </div>
-
-                <div class="carousel-item ">
-                  <img class="d-block w-100" src="images/MFG4-2016.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>MFG4 2016</p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/MFG4-2016-1.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>MFG4 2016</p>
-                  </div>
-                </div>
+    </div>
 
 
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
 
-          </div>
 
-        </div>
+
+    <div id="banner">
+
+      <div class="banner-container banner-1">
+        <h3 class="display-5 banner-title-1">More From Predator Software</h3>
+
+        <p class="banner-sub-text">Please contact us for information on our other Predator Software products. We offer
+          the entire range of Shop Floor Control applications from one of the industry's most reputable developers.</p>
+
+        <p></p>
+
+        <ul>
+          <li>Network your CNCs, PLCs & Robots</li>
+          <li>Control your documents & CNC programs</li>
+          <li>Real-time machine monitoring & OEE</li>
+          <li>Automate your production with robotics</li>
+          <li>Revise your CNC programs</li>
+          <li>Verify your CNC machines</li>
+          <li>Organize your tools, gages and fixtures</li>
+          <li>Manage your work instructions</li>
+        </ul>
+
+
+
+      </div>
+
+      <div class="banner-container banner-2">
+        <img src="images/more-from-predator.jpg" class="des-img" alt="">
+      </div>
+
+    </div>
+
+
 
   </section>
+
+  <!-- If already have a DNC -->
+
+
+
 
 
 
@@ -1039,6 +979,7 @@
 
 
 
+
   </section>
 
 
@@ -1053,12 +994,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 <script>
@@ -1107,11 +1042,7 @@
 
 
 
-
 </script>
-
-<script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
 
 <script>
   window.onbeforeunload = () => {
