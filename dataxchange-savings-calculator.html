@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="header">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>Nexas America</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+
+
+    html,
+    body {
+      
+      background-color: #deebff;
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+      max-width: 100%;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      color: var(--body);
+      box-sizing: border-box;
+      margin: 0;
+      top: 0;
+      left: 0;
+
+    }
+
+
+    a {
+      text-decoration: none;
+      color: rgba(34, 54, 69, .7);
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #2A4DAD;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+ 
+
+
+
+
+    #footer {
+      background-color: #25254D;
+      color: whitesmoke;
+      padding-top: 10%;
+    }
+
+    .footer-img {
+      width: 100%;
+    }
+
+    .footer-box {
+      padding: 10px;
+    }
+
+    .footer-box img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .footer-box ul {
+      list-style-type: none;
+      text-align: left;
+    }
+
+    .footer-box li {
+      font-size: 15px;
+    }
+
+    .footer-box a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    .footer-box a:hover {
+      color: #215bfb;
+    }
+
+    .footer-box p {
+      color: whitesmoke;
+    }
+
+    .footer-address li {
+      color: whitesmoke;
+
+    }
+
+    .footer-email li {
+      color: #666;
+    }
+
+    .footer-policy a {
+      color: white;
+      font-size: 10px;
+    }
+
+    .footer-policy a:hover {
+      color: #215bfb;
+    }
+
+    .footer-copyright {
+
+      font-size: 15px;
+      text-align: right;
+
+    }
+
+    .footer-info {
+      font-size: 15px;
+    }
+
+    .social-icons-footer img {
+      width: 30px;
+    }
+
+
+
+    /** Products & Services **/
+
+
+    #services {
+      margin-top: 80px;
+      padding-top: 10%;
+      padding-bottom: 5%;
+      
+      clip-path: polygon(75% 13%, 85% 0, 100% 0, 100% 77%, 100% 100%, 0 100%, 0 74%, 0 0, 65% 0);
+
+    }
+
+    .title {
+      padding-bottom: 3%;
+
+    }
+
+    .general-title {
+      font-size: 80px;
+      color: #25254D;
+      font-weight: 5px;
+      text-align: center;
+    }
+
+    .general-title-1 {
+      font-size: 60px;
+      color: #25254D;
+      font-weight: 5px;
+      text-align: left;
+    }
+
+
+
+
+    
+
+
+    .service-img {
+      width: 80px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .services-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 100px) {
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+    .card {
+      margin: 1vh;
+      box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+      transition: transform .45s ease, background .45s ease;
+      overflow: hidden;
+      border-radius: 15px;
+      border-color: gainsboro;
+      min-height: 450px;
+      width: 300px;
+      color: #25254D;
+      background-color: white;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1%;
+      flex-grow: 1;
+
+    }
+
+    .card h3 {
+
+      font-size: 1.3em;
+
+      padding-bottom: .5em;
+      margin: 0 0 0.142857143em;
+      border-bottom: 2px solid #25254D;
+    }
+
+
+    .card .card-body {
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card:hover {
+      cursor: pointer;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      background-color: #25254D;
+      color: white;
+    }
+
+    .card:hover .card-body {
+      margin-top: 10px;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+
+    @media (max-width: 768px) {
+      .card {
+        min-height: 450px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .card {
+        min-height: 200px;
+      }
+    }
+
+    .card .card-footer {
+      background: none;
+      border-top: none;
+    }
+
+    .link-text {
+      display: block;
+      color: #1d98fd;
+      margin: auto 0 0;
+      transition: color 0.45s ease;
+    }
+
+    .link-text svg {
+      margin-left: 0.5em;
+      transition: transform 0.6s ease;
+    }
+
+    .link-text svg path {
+      transition: fill 0.45s ease;
+    }
+
+
+    .card .card-meta {
+      color: #3e3efa;
+    }
+
+    .card:hover .card-meta {
+      color: rgb(228, 228, 0);
+    }
+
+
+
+    .btn:link,
+    .btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all .2s;
+      position: relative;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-white {
+      background-color: #fff;
+      color: #215bfb;
+      font-size: 15px;
+    }
+
+
+
+    /**End of Products & Services**/
+
+
+
+
+    #banner {
+      margin-top: 70px;
+      padding: 2%;
+      min-height: 500px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #deebff;
+    }
+
+
+
+    .banner-container {
+      flex-direction: row;
+      overflow: hidden;
+      min-height: 300px;
+      justify-content: center;
+      margin-top: auto;
+      margin-bottom: auto;
+
+
+
+    }
+
+    .banner-1 {
+
+      max-width: 700px;
+    }
+
+    .banner-2 {
+
+      max-width: 700px;
+    }
+
+
+    .banner-img {
+      padding: 0;
+      width: 50%;
+      max-width: 500px;
+
+    }
+
+
+
+    .banner-img-1 {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+
+    }
+
+    .title-img {
+      padding: 0;
+      width: 100%;
+      max-width: 500px;
+
+    }
+
+    .banner-title {
+      font-size: 55px;
+      color: #011068;
+      padding-right: 6%;
+
+    }
+
+    .banner-title-2 {
+      font-size: 30px;
+      color: #0e163e;
+
+
+    }
+
+    .sub-text {
+      font-weight: 500px;
+      font-size: 15px;
+      color: grey;
+    }
+
+    /*About*/
+
+    #partners {
+      padding: 50px 0;
+      color: #25254D;
+      background-color: white;
+    }
+
+
+
+    #about {
+      padding-bottom: 20px;
+      padding-top: 15px;
+      color: #25254D;
+      background-color: rgb(221, 233, 255);
+      font-size: 1.1rem;
+
+    }
+
+    #social-media {
+      color: #25254D;
+      background-color: white;
+      padding: 50px;
+
+
+    }
+
+    .social-icons img {
+      width: 100px;
+      padding: 10px;
+    }
+
+    .social-icons-footer img {
+      width: 20px;
+    }
+
+
+
+    #overlay {
+      position: fixed;
+      /* Sit on top of the page content */
+      display: none;
+      /* Hidden by default */
+      width: 100%;
+      /* Full width (cover the whole page) */
+      height: 100%;
+      /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #25254d9b;
+      /* Black background with opacity */
+      z-index: 3;
+      /* Specify a stack order in case you're using a different order for other elements */
+      cursor: pointer;
+      /* Add a pointer on hover */
+    }
+
+ 
+
+
+
+    #reg-form {
+      padding-top: 0%;
+
+    }
+
+    .reg-form-side-text {
+      place-items: center;
+      vertical-align: middle;
+    }
+
+
+
+    form-body {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+
+    }
+
+
+
+    .form-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    .form-holder .form-content {
+
+      position: relative;
+      text-align: center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      align-items: center;
+      padding: 60px;
+    }
+
+    .form-content .form-items {
+      background-color:#f6dd82;
+      border: 1px solid white;
+      padding: 40px;
+      display: inline-block;
+      width: 100%;
+      min-width: 600px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      text-align: left;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      box-shadow: 5px 10px #888888;
+    }
+
+
+
+
+    .form-content h3 {
+      color: #3c3c75;
+      text-align: left;
+      font-size: 28px;
+      font-weight: 600;
+
+    }
+
+
+    .form-content p {
+      color: rgb(0, 0, 0);
+
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+
+    .form-content label,
+    .was-validated .form-check-input:invalid~.form-check-label,
+    .was-validated .form-check-input:valid~.form-check-label {
+      color: #fff;
+    }
+
+    .form-content input[type=text],
+    .form-content input[type=password],
+    .form-content input[type=email],
+    .form-content select {
+      width: 100%;
+      padding: 9px 20px;
+      text-align: left;
+      border: 0;
+      outline: 0;
+      border-radius: 6px;
+      background-color: #fff;
+      font-size: 15px;
+      font-weight: 300;
+      color: #8D8D8D;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      margin-top: 16px;
+    }
+
+
+    .btn-primary {
+      background-color: #6C757D;
+      outline: none;
+      border: 0px;
+      box-shadow: none;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+      background-color: #495056;
+      outline: none !important;
+      border: none !important;
+      box-shadow: none;
+    }
+
+    .form-content textarea {
+      position: static !important;
+      width: 100%;
+      padding: 8px 20px;
+      border-radius: 6px;
+      text-align: left;
+      background-color: #fff;
+      border: 0;
+      font-size: 15px;
+      font-weight: 300;
+      color: #8D8D8D;
+      outline: none;
+      resize: none;
+      height: 120px;
+      -webkit-transition: none;
+      transition: none;
+      margin-bottom: 14px;
+    }
+
+    .form-content textarea:hover,
+    .form-content textarea:focus {
+      border: 0;
+      background-color: #ebeff8;
+      color: #8D8D8D;
+    }
+
+    .mv-up {
+      margin-top: -9px !important;
+      margin-bottom: 8px !important;
+    }
+
+    .invalid-feedback {
+      color: #ff606e;
+    }
+
+    .valid-feedback {
+      color: #2acc80;
+    }
+
+
+
+    .col-side-scalc {
+
+      vertical-align: middle;
+
+    }
+
+
+    .calc-img {
+      width: 80%;
+      text-align: center;
+    }
+
+    .small link
+    {
+      font-size:10vw;
+    }
+
+    .solid {
+      border-top: 1px solid #9b9999;
+      width: 30%;
+      
+
+    }
+
+
+
+    .banner-container-1 {
+      background-color: #25254D;
+      color: white;
+      text-align: center;
+      padding: 2%;
+    }
+
+    .b-text {
+      font-size: 20px;
+      text-align: left;
+      padding: 5%;
+    }
+
+    .b-img {}
+
+
+
+    .navbar {
+      background-color: #25254D;
+      color: #000000;
+    }
+
+    .navbar-brand img {
+      width: 50%;
+    }
+
+    .nav-item {
+      font-size: large;
+
+    }
+
+    .general-title {
+      font-size: 80px;
+      color: #363670;
+      font-weight: 5px;
+
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/true logo eps exact copy.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown" size="10">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <li>
+                <div class="container">
+                  <h6>DNC Communication</h6>
+                </div>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Fusion DNC</a></li>
+              <li><a class="dropdown-item" href="#">Fusion FlashDNC</a></li>
+              <li><a class="dropdown-item" href="#">Fusion MobileDNC</a></li>
+              <li><a class="dropdown-item" href="#">Predator DNC</a></li>
+
+              <hr class="dropdown-divider">
+
+
+              <li>
+                <div class="container">
+                  <h6>Machine Monitoring</h6>
+                </div>
+              </li>
+
+              <li><a class="dropdown-item" href="#">DataXchange</dATAg></a></li>
+              <li><a class="dropdown-item" href="#">pWidgets Master View</a></li>
+
+              <hr class="dropdown-divider">
+
+              <li><a class="dropdown-item" href="#">App Development and Programming </dATAg></a></li>
+
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Hardware</a></li>
+
+
+
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Support</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">Technical</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">Blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">News</a></li>
+              <li><a class="dropdown-item" href="#">Tradeshows</a></li>
+              <li><a class="dropdown-item" href="#">Webinars</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-warning btn-sm" href="#" tabindex="-1">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Machine Calculator -->
+
+  <section id="banner">
+
+
+
+    <div class="banner-container banner-1">
+      <h2 class="general-title-1">DataXchange</h2>
+      
+      <h5 class="display-6 banner-title-2">
+        Savings Calculator
+      </h5>
+
+      <p class="sub-text">Find out how much you could be saving with Machine Monitoring (OEE). Fill out the white
+        boxes below with your shop's info. Most companies see a 10-15% gain in productivity!</p>
+
+      
+    </div>
+
+
+    <div class="banner-container banner-2 ">
+      <img src="images/calc.png" class="calc-img">
+    </div>
+
+
+
+    <div id="container">
+
+      <div class="row">
+
+        <div class="col-md-2">
+
+
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+            <div class="form-content">
+              <div class="form-items">
+                <h3>Machine Monitoring Savings Calculator</h3>
+                <p>Find out how much you could be saving!</p>
+                <div class="dropdown-divider"></div>
+                <form class="requires-validation" novalidate>
+
+                  <div class="">
+                    <div class="row">
+
+                      <div class="col-md-4">
+
+
+                        <div class="row">
+
+                          <div class="col-md-6">
+
+                            <p>Number of Machines <input class="form-control" type="text" name="name" placeholder=""
+                                required>
+                            </p>
+                            <div class="valid-feedback">Username field is valid!</div>
+                            <div class="invalid-feedback">Username field cannot be blank!</div>
+
+                          </div>
+
+
+                          <div class="col-md-6">
+
+                            <p>Hourly Burden Rate <input class="form-control" type="text" name="name" placeholder=""
+                                required>
+                            </p>
+                            <div class="valid-feedback">Username field is valid!</div>
+                            <div class="invalid-feedback">Username field cannot be blank!</div>
+
+                          </div>
+
+
+                        </div>
+
+                        <p>Average Hours of Operation Per Day <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+                        <p>Average Days of Work Per Week <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+
+                        <p>Average Weeks Per Month <input class="form-control" type="text" name="name" placeholder=""
+                            required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+                        <p>Estimated Operating Cost Monthly <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+                        <p>Estimated Operating Cost Monthly <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+                        <p>Estimated Operating Cost Annually <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+
+                      </div>
+
+
+                      <div class="col-md-4">
+
+
+                        <p>Estimated % Increase in Productivity
+                          <select class="form-select mt-3" required>
+                            <option selected disabled value="">Webinar to Attend</option>
+                            <option value="jweb">Machine Data Collection: Leftover Budget?
+                              Invest it</option>
+                          </select>
+                        </p>
+                        <div class="valid-feedback">You selected a webinar!</div>
+                        <div class="invalid-feedback">Please select a webinar you'd like to attend!</div>
+
+
+                        <p>Continuous Gross Savings Monthly <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+
+
+                        <p>Continuous Gross Savings Annually <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+
+
+
+                        <p>DataXchange Monthly Cost Per Machine
+                          <select class="form-select mt-3" required>
+                            <option selected disabled value="">Webinar to Attend</option>
+                            <option value="jweb">Machine Data Collection: Leftover Budget?
+                              Invest it</option>
+                          </select>
+                        </p>
+                        <div class="valid-feedback">You selected a webinar!</div>
+                        <div class="invalid-feedback">Please select a webinar you'd like to attend!</div>
+
+
+
+
+
+
+                        <p>DataXchange Cost Monthly <input class="form-control" type="text" name="name" placeholder=""
+                            required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+
+
+
+
+
+                        <p>DataXchange Cost Annually <input class="form-control" type="text" name="name" placeholder=""
+                            required>
+                        </p>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+                      </div>
+
+                      <div class="col-md-4">
+                        <h5>Continuous Net Savings Monthly <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </h5>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+
+
+
+                        <h5>Continuous Net Savings Annually <input class="form-control" type="text" name="name"
+                            placeholder="" required>
+                        </h5>
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">Username field cannot be blank!</div>
+
+                        <div class="form-button mt-3">
+                          <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+
+                          <div class="container">
+                            <img src="images/dataxchangelogo.png" alt="banner-img-1">
+                            <img src="images/dataxchange-calc.png" class="banner-img-1" alt="">
+                          
+                            <p></p>
+                            <p>
+
+                              <a href="#"  class="small-link">Click here for more information on DataXchange Machine Monitoring.</a>
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+
+
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    </div>
+
+    <div class="col-md-2">
+
+
+    </div>
+
+    </div>
+    </div>
+
+  </section>
+
+
+  <!-- Products & Services-->
+
+
+
+
+
+
+
+  <!-- footer -->
+  <section id="footer">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer-box footer-info">
+          <img src="images/true logo eps exact copy.png" alt="">
+          <p>Nexas America and its affiliates bring together a team of world-class companies and individuals with
+            products and services aimed at helping manufacturers better compete in today's competitive and highly
+            automated manufacturing environment</p>
+          <div class="social-icons-footer">
+            <a href="#"><img src="images/facebook.png" alt=""></a>
+            <a href="#"><img src="images/twitter.png" alt=""></a>
+            <a href="#"><img src="images/youtube.png" alt=""></a>
+            <a href="#"><img src="images/linkedin.png" alt=""></a>
+          </div>
+
+
+        </div>
+
+
+        <div class="col-md-3 footer-box">
+          <ul>
+            <b>Company</b>
+            <li><a class="" href="#">About Us</a></li>
+            <li><a class="" href="#">Our Growing Customers</a></li>
+            <li><a class="" href="#">Terms and Condition</a></li>
+            <li><a class="" href="#">Contact Us</a></li>
+            <li><a class="" href="#">News and Events</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-3 footer-box">
+          <ul>
+            <b>Products & Services</b>
+            <li><a class="" href="#">DNC</a></li>
+            <li><a class="" href="#">Machine Monitoring</a></li>
+            <li><a class="" href="#">PDM</a></li>
+            <li><a class="" href="#">Programming Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 footer-box footer-address">
+          <ul>
+            <b>Address</b>
+            <li>Hampden, MA 01036</li>
+            <li>Massachusetts: 413.566.0100</li>
+            <li>Pennsylvania: 267.603.5582</li>
+          </ul>
+
+          <ul>
+            <b>Send us an email</b>
+            <li>info@nexasamerica.com</li>
+          </ul>
+
+
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <hr>
+        <div class="col-md-6 col-sm-12">
+          <p class="footer-policy">
+            <a href="">Terms and Condition &nbsp;</a>
+            <a href="">Privacy Policy &nbsp;</a>
+            <a href="">Cookie Policy</a>
+
+          </p>
+
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <p class="footer-copyright">© 2022 Nexas America LLC. All rights reserved.</p>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+</script>
+
+
+<script>
+
+  var nav = document.querySelector('nav');
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 10) {
+      nav.classList.add('active');
+
+    } else {
+      nav.classList.remove('active');
+    }
+  });
+
+
+
+</script>
+
+<script>
+
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+
+</script>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

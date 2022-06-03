@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="header">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+
+    <title>Nexas America</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+
+
+        html,
+        body {
+
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+            max-width: 100%;
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--body);
+            box-sizing: border-box;
+            margin: 0;
+            top: 0;
+            left: 0;
+
+            background-color: #deebff;
+
+
+        }
+
+
+        a {
+            text-decoration: none;
+            color: rgba(34, 54, 69, .7);
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #2A4DAD;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+
+
+
+
+
+        #footer {
+            background-color: #25254D;
+            color: whitesmoke;
+            width: 100%;
+            padding-top: 10%;
+        }
+
+        .footer-img {
+            width: 100%;
+        }
+
+        .footer-box {
+            padding: 10px;
+        }
+
+        .footer-box img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .footer-box ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .footer-box li {
+            font-size: 15px;
+        }
+
+        .footer-box a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .footer-box a:hover {
+            color: #215bfb;
+        }
+
+        .footer-box p {
+            color: whitesmoke;
+        }
+
+        .footer-address li {
+            color: whitesmoke;
+
+        }
+
+        .footer-email li {
+            color: #666;
+        }
+
+        .footer-policy a {
+            color: white;
+            font-size: 10px;
+        }
+
+        .footer-policy a:hover {
+            color: #215bfb;
+        }
+
+        .footer-copyright {
+
+            font-size: 15px;
+            text-align: right;
+
+        }
+
+        .footer-info {
+            font-size: 15px;
+        }
+
+        .social-icons-footer img {
+            width: 30px;
+        }
+
+        .ad-img {
+            float: right;
+            margin: 0px 0px 15px 20px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .social-icons img {
+            width: 100px;
+            padding: 10px;
+        }
+
+        .social-icons-footer img {
+            width: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-space {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /*standard value for mobile devices, bootstrap is mobile first: */
+        .content {
+            margin-top: 200px;
+        }
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .content {
+                margin-top: 100px;
+            }
+        }
+
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .content {
+                margin-top: 80px;
+            }
+        }
+
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .content {
+                margin-top: 60px;
+            }
+        }
+
+
+        #services {
+            
+            
+            padding-top: 2%;
+            padding-bottom: 5%;
+            
+        }
+
+
+        .section-title {
+            color: white;
+            text-align: center;
+            padding-top: 10%;
+            height: 500px;
+            background-color: #03e5b7;
+            background-image: linear-gradient(315deg, #03e5b7 0%, #037ade 74%);
+
+        }
+
+
+        .title {
+            padding-bottom: 3%;
+
+
+        }
+
+
+        .wrapper {
+            background: white;
+            padding-top: 0;
+        }
+
+        .service-img {
+            width: 80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+
+
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 100px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .card-2 {
+            margin: 0vh;
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            min-height: 30px;
+            width: 300px;
+            color: white;
+            flex-direction: row;
+
+            text-align: center;
+
+        }
+
+        .card-2.card-body {
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card-2:hover {
+            cursor: pointer;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: #bbdefb;
+            color: #25254d;
+        }
+
+
+        @media (max-width: 768px) {
+            .card-2 {
+                min-height: 100px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .card-2 {
+                min-height: 200px;
+            }
+        }
+
+        .card-2 .card-footer {
+            background: none;
+            border-top: none;
+        }
+
+        .link-text {
+            display: block;
+            color: #1d98fd;
+            margin: auto 0 0;
+            transition: color 0.45s ease;
+        }
+
+        .link-text svg {
+            margin-left: 0.5em;
+            transition: transform 0.6s ease;
+        }
+
+        .link-text svg path {
+            transition: fill 0.45s ease;
+        }
+
+
+        .card-2 .card-meta {
+            color: #3e3efa;
+        }
+
+        .card-2:hover .card-meta {
+            color: rgb(228, 228, 0);
+        }
+
+
+
+
+        .box-1 {
+
+            color: black;
+            background-color: #cce2fc;
+
+
+        }
+
+        .box-2 {
+            color: black;
+            background-color: #a6ccfd;
+
+
+        }
+
+
+        .box-3 {
+            color: black;
+            background-color: #a6ccfd;
+
+        }
+
+
+        .box-4 {
+            color: black;
+            background-color: #cce2fc;
+
+        }
+
+
+
+        .card {
+            margin: 1vh;
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            border-radius: 15px;
+            border-color: gainsboro;
+            min-height: 450px;
+            width: 300px;
+            color: #25254D;
+            background-color: white;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 1%;
+            flex-grow: 1;
+
+        }
+
+
+
+        .card h3 {
+
+            font-size: 2em;
+
+            padding-bottom: .5em;
+            margin: 0 0 0.142857143em;
+            border-bottom: 2px solid #25254D;
+        }
+
+
+        .card .card-body {
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card:hover {
+            cursor: pointer;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: #25254D;
+            color: white;
+        }
+
+        .card:hover .card-body {
+            margin-top: 10px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+
+        @media (max-width: 768px) {
+            .card {
+                min-height: 450px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .card {
+                min-height: 200px;
+            }
+        }
+
+        .card .card-footer {
+            background: none;
+            border-top: none;
+        }
+
+        .link-text {
+            display: block;
+            color: #1d98fd;
+            margin: auto 0 0;
+            transition: color 0.45s ease;
+        }
+
+        .link-text svg {
+            margin-left: 0.5em;
+            transition: transform 0.6s ease;
+        }
+
+        .link-text svg path {
+            transition: fill 0.45s ease;
+        }
+
+
+
+
+
+        .card .card-meta {
+            color: #3e3efa;
+        }
+
+        .card:hover .card-meta {
+            color: rgb(228, 228, 0);
+        }
+
+
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: relative;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white {
+            background-color: #fff;
+            color: #215bfb;
+            font-size: 15px;
+        }
+
+
+        /*Design Box*/
+
+        .design-col {
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            min-height: 450px;
+            width: 300px;
+            color: white;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-grow: 1;
+
+        }
+
+        .design-col ul {
+            list-style-type: circle;
+            font-size: 15px;
+        }
+
+        .design-col:hover {
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: #f3d76b;
+            color: #25254D;
+        }
+
+        .des-img {
+            width: 600px;
+        }
+
+        .shining-text {
+
+            text-align: center;
+            font-size: 60px;
+            font-family: Poppins, sans-serif;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #FDCF1D, #fff, #FDCF1D);
+            letter-spacing: 5px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: shine 5s linear infinite;
+            position: relative;
+            padding-bottom: 0;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position-x: -500%;
+            }
+
+            100% {
+                background-position-x: 500%;
+            }
+        }
+
+        .general-title {
+            font-size: 55px;
+            color: #25254D;
+            font-weight: 5px;
+        }
+
+        /* Banner */
+
+
+        #banner {
+
+            min-height: 500px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+
+        .banner-container {
+            flex-direction: row;
+            overflow: hidden;
+            min-height: 300px;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .banner-container ul {
+            list-style-type: square;
+        }
+
+
+        .banner-1 {
+
+            max-width: 700px;
+
+        }
+
+        .banner-2 {
+
+            max-width: 800px;
+        }
+
+
+        .banner-img {
+            padding: 0;
+            width: 100%;
+            max-width: 500px;
+
+        }
+
+        .banner-title {
+            font-size: 55px;
+            color: #011068;
+            padding-right: 6%;
+
+        }
+
+        .banner-title-1 {
+            font-size: 30px;
+            color: #011068;
+            padding-right: 6%;
+
+        }
+
+
+        .sub-text {
+            font-weight: 500px;
+            font-size: 15px;
+            color: grey;
+        }
+
+        .banner-sub-text {
+            font-weight: 500px;
+            font-size: 15px;
+            color: white;
+
+
+
+        }
+
+        #reg-form {
+            padding-top: 0%;
+        }
+
+        .reg-form-side-text {
+            place-items: center;
+
+        }
+
+
+
+        form-body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+
+
+        }
+
+
+
+        .form-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+        }
+
+        .form-holder .form-content {
+
+            position: relative;
+            text-align: center;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            align-items: center;
+            padding: 60px;
+
+        }
+
+        .form-content .form-items {
+            background-color: #090839;
+            color: white;
+            border: 1px solid white;
+            padding: 40px;
+            display: inline-block;
+            width: 100%;
+            min-width: 540px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            text-align: left;
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+
+        .form-content h3 {
+
+            text-align: left;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .form-content h3.form-title {
+            margin-bottom: 30px;
+        }
+
+        .form-content p {
+
+            text-align: left;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+
+
+        .form-content label,
+        .was-validated .form-check-input:invalid~.form-check-label,
+        .was-validated .form-check-input:valid~.form-check-label {
+            color: #fff;
+        }
+
+        .form-content input[type=text],
+        .form-content input[type=password],
+        .form-content input[type=email],
+        .form-content select {
+            width: 100%;
+            padding: 9px 20px;
+            text-align: left;
+            border: 0;
+            outline: 0;
+            border-radius: 6px;
+            background-color: #fff;
+            font-size: 15px;
+            font-weight: 300;
+            color: #8D8D8D;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            margin-top: 16px;
+        }
+
+
+        .btn-primary {
+            background-color: #6C757D;
+            outline: none;
+            border: 0px;
+            box-shadow: none;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active {
+            background-color: #495056;
+            outline: none !important;
+            border: none !important;
+            box-shadow: none;
+        }
+
+        .form-content textarea {
+            position: static !important;
+            width: 100%;
+            padding: 8px 20px;
+            border-radius: 6px;
+            text-align: left;
+            background-color: #fff;
+            border: 0;
+            font-size: 15px;
+            font-weight: 300;
+            color: #8D8D8D;
+            outline: none;
+            resize: none;
+            height: 120px;
+            -webkit-transition: none;
+            transition: none;
+            margin-bottom: 14px;
+        }
+
+        .form-content textarea:hover,
+        .form-content textarea:focus {
+            border: 0;
+            background-color: #ebeff8;
+            color: #8D8D8D;
+        }
+
+        .mv-up {
+            margin-top: -9px !important;
+            margin-bottom: 8px !important;
+        }
+
+        .invalid-feedback {
+            color: #ff606e;
+        }
+
+        .valid-feedback {
+            color: #2acc80;
+        }
+
+
+        /* Solid border */
+        .solid {
+            border-top: 1px solid #3d3d3d;
+        }
+
+        .sidenews-border {
+            border-top: 1px solid #e6e4e4;
+        }
+
+
+        .light-heading {
+            color: rgb(79, 76, 76);
+
+        }
+
+
+        .news-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .side-news h5 {
+            font-size: medium;
+            padding: 10px;
+            line-height: 1.8;
+            color: #616161;
+
+        }
+
+        .timeline-date {
+            color: #616161;
+        }
+
+
+    
+        .banner-title-sm {
+            text-align: center;
+
+        }
+
+
+        .border-l {
+            border-right-style: solid;
+            border-width: .5px;
+            border-color: #b2acac;
+        }
+
+        .loc-img {
+            width: 5%;
+            padding-bottom: 1%;
+        }
+
+        .ad-container {
+            margin-top: 80px;
+            background-color: rgb(233, 255, 167);
+            color: black;
+        }
+
+        .banner-container-1 {
+      background-color: #25254D;
+      color: white;
+      text-align: center;
+      padding: 2%;
+    }
+
+    .b-text {
+      font-size: 20px;
+      text-align: left;
+      padding: 5%;
+    }
+
+    .b-img {}
+
+
+
+    .navbar {
+      background-color: #25254D;
+      color: #000000;
+    }
+
+    .navbar-brand img {
+      width: 50%;
+    }
+
+    .nav-item {
+      font-size: large;
+
+    }
+
+    .general-title {
+      font-size: 80px;
+      color: #363670;
+      font-weight: 5px;
+
+    }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/true logo eps exact copy.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    
+              <li class="nav-item dropdown" size="10">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                  <li>
+                    <div class="container">
+                      <h6>DNC Communication</h6>
+                    </div>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Fusion DNC</a></li>
+                  <li><a class="dropdown-item" href="#">Fusion FlashDNC</a></li>
+                  <li><a class="dropdown-item" href="#">Fusion MobileDNC</a></li>
+                  <li><a class="dropdown-item" href="#">Predator DNC</a></li>
+    
+                  <hr class="dropdown-divider">
+    
+    
+                  <li>
+                    <div class="container">
+                      <h6>Machine Monitoring</h6>
+                    </div>
+                  </li>
+    
+                  <li><a class="dropdown-item" href="#">DataXchange</dATAg></a></li>
+                  <li><a class="dropdown-item" href="#">pWidgets Master View</a></li>
+    
+                  <hr class="dropdown-divider">
+    
+                  <li><a class="dropdown-item" href="#">App Development and Programming </dATAg></a></li>
+    
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#">Hardware</a></li>
+    
+    
+    
+                </ul>
+              </li>
+    
+    
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Support</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link " href="#">Technical</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link " href="#">Blog</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">News</a></li>
+                  <li><a class="dropdown-item" href="#">Tradeshows</a></li>
+                  <li><a class="dropdown-item" href="#">Webinars</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-warning btn-sm" href="#" tabindex="-1">Contact Us</a>
+              </li>
+            </ul>
+    
+          </div>
+        </div>
+      </nav>
+    
+
+
+    <div class="ad-container text-center">
+        <h5 class="">
+            <marquee>Need Predator Software Support?
+                <img src="/images/predator var logo rgb 300dpi.jpg" alt="">
+                Call us now! <b>413.566.0100 x2</b>
+            </marquee>
+        </h5>
+
+    </div>
+
+
+
+    <!-- Products & Services-->
+
+
+    <section id="services">
+
+        <div class="container">
+            <h2 class="general-title">CONTACT US</h2>
+            <h5>Thank you for visiting our website!</h5>
+        </div>
+
+
+        <div id="banner">
+
+            <div class="banner-container banner-1">
+
+                <div class="form-body">
+                    <div class="row">
+                        <div class="form-holder">
+                            <div class="form-content">
+                                <div class="form-items">
+                                    <h3>Contact Us</h3>
+                                    <p>Please fill out the following form to request information about our products and
+                                        services or to provide feedback about our site. </p>
+                                    <form class="requires-validation" novalidate>
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="text" name="name" placeholder="Name"
+                                                required>
+                                            <div class="valid-feedback">Name field is valid!</div>
+                                            <div class="invalid-feedback">Name field cannot be blank!</div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="email" name="email"
+                                                placeholder="E-mail Address" required>
+                                            <div class="valid-feedback">Email field is valid!</div>
+                                            <div class="invalid-feedback">Email field cannot be blank!</div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="text" id="phone" name="phone"
+                                                placeholder="Phone Number" onkeypress='validate(event)' required>
+
+                                            <div class="valid-feedback">Phone Number field is valid!</div>
+                                            <div class="invalid-feedback">Phone Number field cannot be blank!</div>
+                                        </div>
+
+
+
+
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="text" name="subject" placeholder="Subject"
+                                                required>
+                                            <div class="valid-feedback">Subject field is valid!</div>
+                                            <div class="invalid-feedback">Subject field cannot be blank!</div>
+                                        </div>
+
+
+
+
+
+                                        <div class="col-md-12">
+                                            <br>
+
+                                            <textarea id="message" name="message" rows="5" cols="33"
+                                                placeholder="Your Message"></textarea>
+                                        </div>
+
+
+
+
+                                        <div class="form-button mt-3">
+                                            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                                            <button id="submit" type="submit" class="btn btn-primary">Clear
+                                                Form</button>
+
+
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="banner-container banner-2">
+                <h2 class="banner-title-sm">Our Contact Support</h1>
+                    <div class="services-container container">
+
+                        <div class="card-2 box-1">
+
+                            <div class="card-body">
+                                <div>
+                                    <img src="images/general.png" alt="" class="service-img">
+                                </div>
+
+                                <h5 class=""> General</h5>
+                                <p>
+                                    Phone: 413.566.0100 x1
+                                </p>
+
+                                <p>
+                                    Email: info@nexasamerica.com
+                                </p>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="card-2 box-2">
+
+                            <div class="card-body">
+                                <div>
+                                    <img src="images/sales.png" alt="" class="service-img">
+                                </div>
+
+                                <h5 class="">Sales</h5>
+                                <p>
+                                    Phone: 413.566.0100 x1
+                                </p>
+
+                                <p>
+                                    Email: info@nexasamerica.com
+                                </p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="card-2 box-3">
+
+                            <div class="card-body">
+                                <div>
+                                    <img src="images/technical.png" alt="" class="service-img">
+                                </div>
+
+                                <h5 class="">Technical Support</h5>
+
+                                <p>
+                                    Phone: 413.566.0100 x1
+                                </p>
+
+                                <p>
+                                    Email: info@nexasamerica.com
+                                </p>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="card-2 box-4">
+
+                            <div class="card-body">
+                                <div>
+                                    <img src="images/satellite.png" alt="" class="service-img">
+                                </div>
+
+                                <h5 class="">Satellite Office</h5>
+
+                                <p>
+                                    Phone: 413.566.0100 x1
+                                </p>
+
+                                <p>
+                                    Email: info@nexasamerica.com
+                                </p>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <br>
+
+                    <div class="container">
+                        <h5 class="banner-title-sm"><b>For those looking for support for
+                                NexLink Products.</b></h5>
+
+                        <p>
+                            We are in NO WAY affiliated with this product or the company that provides it: NEXAS Tech Co
+                            Ltd.
+                        </p>
+
+                        <p>
+                            They have no contact option to support their products and we recommend returning your item
+                            to
+                            the reseller it was bought from.
+                        </p>
+
+                    </div>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <div class="container office-cont-bg">
+        <div class="row text-center">
+            <h2 class="banner-title-sm"> Our Offices</h2>
+
+            <div class="col-lg-6 border-l">
+                <img src="/images/loc.png" alt="" class="loc-img">
+                <h4>Pennsylvania</h4>
+                <h4>Hatfield, PA 19440</h4>
+
+
+            </div>
+            <div class="col-lg-6">
+                <img src="/images/loc.png" alt="" class="loc-img">
+                <h4>Massachusetts
+                </h4>
+                <h4>
+                    Hampden, MA 01036</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- If already have a DNC -->
+
+
+
+
+
+
+    <!-- footer -->
+    <section id="footer">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-box footer-info">
+                    <img src="images/true logo eps exact copy.png" alt="">
+                    <p>Nexas America and its affiliates bring together a team of world-class companies and individuals
+                        with products and services aimed at helping manufacturers better compete in today's competitive
+                        and highly automated manufacturing environment</p>
+                    <div class="social-icons-footer">
+                        <a href="#"><img src="images/facebook.png" alt=""></a>
+                        <a href="#"><img src="images/twitter.png" alt=""></a>
+                        <a href="#"><img src="images/youtube.png" alt=""></a>
+                        <a href="#"><img src="images/linkedin.png" alt=""></a>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-md-3 footer-box">
+                    <ul>
+                        <b>Company</b>
+                        <li><a class="" href="#">About Us</a></li>
+                        <li><a class="" href="#">Our Growing Customers</a></li>
+                        <li><a class="" href="#">Terms and Condition</a></li>
+                        <li><a class="" href="#">Contact Us</a></li>
+                        <li><a class="" href="#">News and Events</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3 footer-box">
+                    <ul>
+                        <b>Products & Services</b>
+                        <li><a class="" href="#">DNC</a></li>
+                        <li><a class="" href="#">Machine Monitoring</a></li>
+                        <li><a class="" href="#">PDM</a></li>
+                        <li><a class="" href="#">Programming Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer-box footer-address">
+                    <ul>
+                        <b>Address</b>
+                        <li>Hampden, MA 01036</li>
+                        <li>Massachusetts: 413.566.0100</li>
+                        <li>Pennsylvania: 267.603.5582</li>
+                    </ul>
+
+                    <ul>
+                        <b>Send us an email</b>
+                        <li>info@nexasamerica.com</li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <hr>
+                <div class="col-md-6 col-sm-12">
+                    <p class="footer-policy">
+                        <a href="">Terms and Condition &nbsp;</a>
+                        <a href="">Privacy Policy &nbsp;</a>
+                        <a href="">Cookie Policy</a>
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <p class="footer-copyright">© 2022 Nexas America LLC. All rights reserved.</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <script>
+        function validate(evt) {
+            var theEvent = evt || window.event;
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode(key);
+            var regex = /[0-9]|\./;
+            if (!regex.test(key)) {
+                theEvent.returnValue = false;
+                if (theEvent.preventDefault) theEvent.preventDefault();
+            }
+        }
+    </script>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+
+
+
+
+    </script>
+
+
+    <script>
+        window.onbeforeunload = () => {
+            window.scrollTo(0, 0);
+        };
+    </script>
+
+    <script>
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.requires-validation')
+            Array.from(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+    </script>
+
+
+
+</body>
+
+</html>

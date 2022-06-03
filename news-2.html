@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="header">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+
+    <title>Nexas America</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+
+
+        html,
+        body {
+
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+            max-width: 100%;
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--body);
+            box-sizing: border-box;
+            margin: 0;
+            top: 0;
+            left: 0;
+
+            background-color: #deebff;
+
+
+
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: rgba(34, 54, 69, .7);
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #2A4DAD;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+
+
+
+
+
+        #footer {
+            background-color: #25254D;
+            color: whitesmoke;
+            width: 100%;
+            padding-top: 10%;
+        }
+
+        .footer-img {
+            width: 100%;
+        }
+
+        .footer-box {
+            padding: 10px;
+        }
+
+        .footer-box img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .footer-box ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .footer-box li {
+            font-size: 15px;
+        }
+
+        .footer-box a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .footer-box a:hover {
+            color: #215bfb;
+        }
+
+        .footer-box p {
+            color: whitesmoke;
+        }
+
+        .footer-address li {
+            color: whitesmoke;
+
+        }
+
+        .footer-email li {
+            color: #666;
+        }
+
+        .footer-policy a {
+            color: white;
+            font-size: 10px;
+        }
+
+        .footer-policy a:hover {
+            color: #215bfb;
+        }
+
+        .footer-copyright {
+
+            font-size: 15px;
+            text-align: right;
+
+        }
+
+        .footer-info {
+            font-size: 15px;
+        }
+
+        .social-icons-footer img {
+            width: 30px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .social-icons img {
+            width: 100px;
+            padding: 10px;
+        }
+
+        .social-icons-footer img {
+            width: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-space {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /*standard value for mobile devices, bootstrap is mobile first: */
+        .content {
+            margin-top: 200px;
+        }
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .content {
+                margin-top: 100px;
+            }
+        }
+
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .content {
+                margin-top: 80px;
+            }
+        }
+
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .content {
+                margin-top: 60px;
+            }
+        }
+
+
+        #services {
+            margin-top: 100px;
+            padding-top: 2%;
+            padding-bottom: 5%;
+            
+        }
+
+
+        .section-title {
+            color: white;
+            text-align: center;
+            padding-top: 10%;
+            height: 500px;
+            background-color: #03e5b7;
+            background-image: linear-gradient(315deg, #03e5b7 0%, #037ade 74%);
+
+        }
+
+
+        .title {
+            padding-bottom: 3%;
+
+
+        }
+
+
+        .wrapper {
+            background: white;
+            padding-top: 0;
+        }
+
+        .service-img {
+            width: 80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+
+
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 100px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .card-2 {
+            margin: 0vh;
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            min-height: 500px;
+            width: 300px;
+            color: white;
+            flex-direction: row;
+            flex-grow: 1;
+
+        }
+
+        .card-2.card-body {
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card-2:hover {
+            cursor: pointer;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: #bbdefb;
+            color: #25254d;
+        }
+
+        .card-2:hover .card-body {
+            margin-top: 10px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+
+
+
+        @media (max-width: 768px) {
+            .card-2 {
+                min-height: 450px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .card-2 {
+                min-height: 200px;
+            }
+        }
+
+        .card-2 .card-footer {
+            background: none;
+            border-top: none;
+        }
+
+        .link-text {
+            display: block;
+            color: #1d98fd;
+            margin: auto 0 0;
+            transition: color 0.45s ease;
+        }
+
+        .link-text svg {
+            margin-left: 0.5em;
+            transition: transform 0.6s ease;
+        }
+
+        .link-text svg path {
+            transition: fill 0.45s ease;
+        }
+
+
+        .card-2 .card-meta {
+            color: #3e3efa;
+        }
+
+        .card-2:hover .card-meta {
+            color: rgb(228, 228, 0);
+        }
+
+
+
+
+        .box-1 {
+            background-color: #05aaff;
+            color: white;
+            padding: 3%;
+            border-radius: 15px;
+        }
+
+        .box-2 {
+            background-color: #282F6C;
+            padding: 3%;
+
+        }
+
+
+        .box-3 {
+            background-color: #151755;
+            padding: 3%;
+        }
+
+
+        .box-4 {
+            background-color: #090839;
+            padding: 3%;
+        }
+
+
+
+
+        .card {
+            margin: 1vh;
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            border-radius: 15px;
+            border-color: gainsboro;
+            min-height: 450px;
+            width: 300px;
+            color: #25254D;
+            background-color: white;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 1%;
+            flex-grow: 1;
+
+        }
+
+
+
+        .card h3 {
+
+            font-size: 2em;
+
+            padding-bottom: .5em;
+            margin: 0 0 0.142857143em;
+            border-bottom: 2px solid #25254D;
+        }
+
+
+        .card .card-body {
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card:hover {
+            cursor: pointer;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: #25254D;
+            color: white;
+        }
+
+        .card:hover .card-body {
+            margin-top: 10px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+
+        @media (max-width: 768px) {
+            .card {
+                min-height: 450px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .card {
+                min-height: 200px;
+            }
+        }
+
+        .card .card-footer {
+            background: none;
+            border-top: none;
+        }
+
+        .link-text {
+            display: block;
+            color: #1d98fd;
+            margin: auto 0 0;
+            transition: color 0.45s ease;
+        }
+
+        .link-text svg {
+            margin-left: 0.5em;
+            transition: transform 0.6s ease;
+        }
+
+        .link-text svg path {
+            transition: fill 0.45s ease;
+        }
+
+
+
+
+
+        .card .card-meta {
+            color: #3e3efa;
+        }
+
+        .card:hover .card-meta {
+            color: rgb(228, 228, 0);
+        }
+
+
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: relative;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white {
+            background-color: #fff;
+            color: #215bfb;
+            font-size: 15px;
+        }
+
+
+        /*Design Box*/
+
+        .design-col {
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            min-height: 450px;
+            width: 300px;
+            color: white;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-grow: 1;
+
+        }
+
+        .design-col ul {
+            list-style-type: circle;
+            font-size: 15px;
+        }
+
+        .design-col:hover {
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: #f3d76b;
+            color: #25254D;
+        }
+
+        .des-img {
+            width: 600px;
+        }
+
+        .shining-text {
+
+            text-align: center;
+            font-size: 60px;
+            font-family: Poppins, sans-serif;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #FDCF1D, #fff, #FDCF1D);
+            letter-spacing: 5px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: shine 5s linear infinite;
+            position: relative;
+            padding-bottom: 0;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position-x: -500%;
+            }
+
+            100% {
+                background-position-x: 500%;
+            }
+        }
+
+        .general-title {
+            font-size: 55px;
+            color: #25254D;
+            font-weight: 5px;
+        }
+
+        /* Banner */
+
+
+        #banner {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+
+        .banner-container {
+            flex-direction: row;
+            overflow: hidden;
+
+        }
+
+        .banner-container ul {
+            list-style-type: square;
+        }
+
+
+        .banner-1 {
+
+            width: 11\2z00px;
+            min-width: 800px;
+            padding-top: 2%;
+        }
+
+        .banner-2 {
+
+            width: 500px;
+            padding-left: 2%;
+            border-left: 1px solid #c0c0c2;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+
+        .banner-img {
+            padding: 0;
+            width: 100%;
+            max-width: 500px;
+
+        }
+
+        .banner-title {
+            font-size: 55px;
+            color: #011068;
+            padding-right: 6%;
+
+        }
+
+        .banner-title-1 {
+            font-size: 30px;
+            color: #011068;
+            padding-right: 6%;
+
+        }
+
+
+        .sub-text {
+            font-weight: 500px;
+            font-size: 15px;
+            color: grey;
+        }
+
+        .banner-sub-text {
+            font-weight: 500px;
+            font-size: 15px;
+            color: black;
+
+        }
+
+
+
+
+        /* Solid border */
+        .solid {
+            border-top: 1px solid #3d3d3d;
+        }
+
+        .sidenews-border {
+            border-top: 1px solid #e6e4e4;
+        }
+
+
+        .light-heading {
+            color: rgb(79, 76, 76);
+
+        }
+
+
+        .news-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .side-news h5 {
+            font-size: medium;
+            padding: 10px;
+            line-height: 1.8;
+            color: #616161;
+
+        }
+
+        .timeline-date {
+            color: #616161;
+        }
+
+
+        .banner-container-1 {
+      background-color: #25254D;
+      color: white;
+      text-align: center;
+      padding: 2%;
+    }
+
+    .b-text {
+      font-size: 20px;
+      text-align: left;
+      padding: 5%;
+    }
+
+    .b-img {}
+
+
+
+    .navbar {
+      background-color: #25254D;
+      color: #000000;
+      
+    }
+
+    .navbar-brand img {
+      width: 50%;
+    }
+
+    .nav-item {
+      font-size: large;
+
+    }
+
+    .general-title {
+      font-size: 80px;
+      color: #363670;
+      font-weight: 5px;
+
+    }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/true logo eps exact copy.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown" size="10">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <li>
+                                <div class="container">
+                                    <h6>DNC Communication</h6>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Fusion DNC</a></li>
+                            <li><a class="dropdown-item" href="#">Fusion FlashDNC</a></li>
+                            <li><a class="dropdown-item" href="#">Fusion MobileDNC</a></li>
+                            <li><a class="dropdown-item" href="#">Predator DNC</a></li>
+
+                            <hr class="dropdown-divider">
+
+
+                            <li>
+                                <div class="container">
+                                    <h6>Machine Monitoring</h6>
+                                </div>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">DataXchange</dATAg></a></li>
+                            <li><a class="dropdown-item" href="#">pWidgets Master View</a></li>
+
+                            <hr class="dropdown-divider">
+
+                            <li><a class="dropdown-item" href="#">App Development and Programming </dATAg></a></li>
+
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">Hardware</a></li>
+
+
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Support</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Technical</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">News</a></li>
+                            <li><a class="dropdown-item" href="#">Tradeshows</a></li>
+                            <li><a class="dropdown-item" href="#">Webinars</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-warning btn-sm" href="#" tabindex="-1">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Products & Services-->
+
+
+    <section id="services">
+
+        <div class="container">
+            <div class="news-container">
+                <h5 class="light-heading">Nexas Now</h5>
+                <div class="solid"></div>
+
+
+                <div class="row">
+
+                    <div class="side-news col-md-4">
+                        <br>
+                        <h5>
+                            <a href="#">
+                                B Capital-Backed Crypto Exchange Zipmex Partners With Australian Football And Rugby
+                                Teams
+
+                            </a>
+                        </h5>
+                        <div class="sidenews-border"></div>
+
+                        <h5>
+                            <a href="#">
+                                B Capital-Backed Crypto Exchange Zipmex Partners With Australian Football And Rugby
+                                Teams
+                            </a>
+                        </h5>
+                        <div class="sidenews-border"></div>
+
+
+                        <h5>
+                            <a href="">
+                                B Capital-Backed Crypto Exchange Zipmex Partners With Australian Football And Rugby
+                                Teams
+
+                            </a>
+                        </h5>
+                        <div class="sidenews-border"></div>
+
+
+                        <h5>
+                            <a href="">
+                                B Capital-Backed Crypto Exchange Zipmex Partners With Australian Football And Rugby
+                                Teams
+
+                            </a>
+                        </h5>
+                        <div class="sidenews-border"></div>
+
+
+                        <h5>
+                            <a href="">
+                                B Capital-Backed Crypto Exchange Zipmex Partners With Australian Football And Rugby
+                                Teams
+
+                            </a>
+                        </h5>
+
+
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-8">
+                        <br>
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="images/1.jpg" class="d-block news-img" alt="...">
+                                    <div class="container text-center">
+                                        <br>
+                                        <h1 class="banner-title-1">Join Us! We are looking Resellers.</h2>
+                                            <h5 class="banner-sub-text">
+                                                We are looking for resellers to sell and support Nexas products and
+                                                services. Are you from outside the US? International reseller
+                                                opportunities
+                                                are also available. Contact Us today!
+                                            </h5>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="images/2.jpg" class="d-block news-img" alt="...">
+                                    <div class="container text-center">
+                                        <br>
+                                        <h1 class="banner-title-1">Authorized Dealer</h2>
+                                            <h5 class="banner-sub-text">
+                                                Nexas is the authorized northeast dealer of Predator Software products
+                                                and
+                                                services. We provide sales, training and support for their industry
+                                                leading
+                                                shop floor solutions.
+                                            </h5>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/3.jpg" class="d-block news-img" alt="...">
+                                    <div class="container text-center">
+                                        <br>
+                                        <h1 class="banner-title-1">Connect "Ethernet" Controls to any DNC System</h2>
+                                            <h5 class="banner-sub-text">
+                                                Nexas' patent pending technology powered by ORiON™ lets your newer
+                                                machines
+                                                take advantage of the security, program management, revision control,
+                                                etc.
+                                                provided by your DNC System. Click Here for more info.
+                                            </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <br>
+
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="container">
+                            <h5 class="light-heading">Timeline</h5>
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1"> Welcome to Nexas, Michael! </h1>
+                            <small class="timeline-date">#September2021</small>
+                            <p>Nexas America would like to welcome Michael Loomes as our new Software Account Manager.
+                                Michael’s work experience includes various technical engineering positions in the UK
+                                with
+                                Raytheon, Autoliv and A.C.W Technologies. He also has experience as a CNC Machine
+                                Operator.
+                                With his diverse skillset and positive energy, Michael will be able to help you assess
+                                your
+                                needs and find the right products to meet your goals.</p>
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">Look out for Fusion 4, Coming Soon! </h1>
+                            <small class="timeline-date">#September2021 #FusionPDM</small>
+                            <p>Our developers are hard at work updating Fusion PDM. This update features an all new
+                                interface and will be rolled out incrementally with a new "Beta Mode".
+                                Contact Us if you'd like to be one of the first to try!</p>
+
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">Welcome Nexas to Nexas, Mark! </h1>
+                            <small class="timeline-date">#January2019</small>
+                            <p>Nexas is pleased to welcome Mark Del Negro to the Nexas Team! Mark will be handling
+                                sales,
+                                and we look forward to his extensive skill set to help deliver an exceptional sales
+                                experience to our customers!</p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">Check Out Our Machine Monitoring Solution on the Cover
+                                of
+                                MMS!</h1>
+                            <small class="timeline-date">#February2016 #DataXchange #ModernMachineShop </small>
+                            <p>In the February 2016 issue of Modern Machine Shop, Senior Editor Peter Zelinski
+                                highlights
+                                the significant increase in productivity of an aircraft-industry machine shop after they
+                                implemented DataXchange™ Data Collection Software.
+                            </p>
+
+                            <br>
+
+                            <p>Check out the article <a href="#">here!</a></p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">View Recorded Webinars</h1>
+                            <small class="timeline-date">#July2014 </small>
+                            <p>Interested in Nexas products, but no time in your schedule for a demo? Previously
+                                recorded
+                                webinars will now be available for viewing on our YouTube channel. To sign up for a live
+                                webinar, please click here.</p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">New Team Member!</h1>
+                            <small class="timeline-date">#July2014 #NexasWebinars</small>
+                            <p>Nexas would like to welcome Christopher Smith as our new Applications Support Specialist.
+                                Chris has worked for the United States Air Force doing Cyber Security for 3 years and is
+                                an
+                                active member of the Air National Guard in Orange, CT. He is also currently pursuing a
+                                degree in Networking and IT Security. We look forward to having Chris on board and the
+                                skills he brings to our team.</p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">MTConnect [MC]2: Connecting Manufacturing Conference
+                            </h1>
+                            <small class="timeline-date">#April2014 #MTConnect #DataXchange </small>
+                            <p>Nexas and affiliate Scytec had a successful MTConnect conference in Orlando, FL this past
+                                week, showing our DataXchange™ Machine Monitoring Software. If you missed us at the
+                                conference be sure to see us at the MFG4 show in Hartford, CT next month!</p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">
+                                Technology Release: Mapped-Drive DNC Link™</h1>
+                            <small class="timeline-date">#September2013 #MappedDriveDNCLink</small>
+                            <p> Nexas' patent pending technology powered by ORiON™ allows users to connect "Ethernet"
+                                Machine Controls to any DNC System.</p>
+
+                            <br>
+
+                            <p>Get more information on Mapped-Drive DNC Link™ technology <a href="#">here.</a></p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">MTConnect Parts Working Group</h1>
+                            <small class="timeline-date">#June2012 #MTConnect</small>
+                            <p>Our President, Jim Smith, has been appointed chairman of the MTConnect Institute Parts
+                                Working Group. The group is working to extend the MTConnect schema to include
+                                information
+                                that will support Parts related applications. Some of these applications include process
+                                document management, revision control, quality control and parts tracking. This will
+                                significantly increase the usability of the emerging MTConnect standard.</p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">CTMA Membership</h1>
+                            <small class="timeline-date">#June2012 #CTMA </small>
+                            <p>Nexas is pleased to announce that we are now a member of the Connecticut Tooling and
+                                Machining Association! We look forward to working with the local manufacturing community
+                                to
+                                support and enhance the manufacturing industry.</p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">Section 179 Deduction</h1>
+                            <small class="timeline-date">#April2014 #MTConnect #DataXchange </small>
+                            <p>Your software purchases from Nexas America may now qualify you for hundreds to thousands
+                                of
+                                dollars in Section 179 savings. All our software products support income producing
+                                activities, have a determinable useful life and can be expected to last more than one
+                                year.
+                                Other than custom solutions, our software is readily available to the general public, is
+                                sold with a non-exclusive license and does not require modifications.
+
+                            </p>
+
+
+                            <br>
+
+                            <p>
+                                For details ask your tax professional to check out <a
+                                    href="http://www.section179.org/section_179_and_software.html">here</a>
+                            </p>
+
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">ORiON™ Featured in Modern Machine Shop</h1>
+                            <small class="timeline-date">#January2012 #ORiON
+
+                            </small>
+                            <p>Happy New Year! Look for ORiON™ in the January issue of Modern Machine Shop or read the
+                                article <a href="#">online.</a></p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">ORiON™ Debuts at [MC]2 Conference!</h1>
+                            <small class="timeline-date">#January2012 </small>
+                            <p>Our ORiON™ CNC Productivity Hub was displayed at the [MC]2 MTConnect Conference in
+                                Cincinnati, Ohio this week.
+                            </p>
+
+                            <br>
+
+                            <p>
+                                Click <a href="#">here</a> for more on the most flexible MTConnect device available
+                                today
+                            </p>
+
+
+                            <div class="solid"></div>
+                            <br>
+
+                            <h1 class="display-6 banner-title-1">
+                                Predator VAR Training</h1>
+                            <small class="timeline-date">#June2011 #PredatorSoftware </small>
+                            <p>Heading down to Huntsville, Alabama for an intense week-long dealer training class for
+                                the
+                                Predator Software suite of products. We will be the new northeast Authorized Reseller!
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- If already have a DNC -->
+
+
+
+
+
+
+    <!-- footer -->
+    <section id="footer">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-box footer-info">
+                    <img src="images/true logo eps exact copy.png" alt="">
+                    <p>Nexas America and its affiliates bring together a team of world-class companies and individuals
+                        with products and services aimed at helping manufacturers better compete in today's competitive
+                        and highly automated manufacturing environment</p>
+                    <div class="social-icons-footer">
+                        <a href="#"><img src="images/facebook.png" alt=""></a>
+                        <a href="#"><img src="images/twitter.png" alt=""></a>
+                        <a href="#"><img src="images/youtube.png" alt=""></a>
+                        <a href="#"><img src="images/linkedin.png" alt=""></a>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-md-3 footer-box">
+                    <ul>
+                        <b>Company</b>
+                        <li><a class="" href="#">About Us</a></li>
+                        <li><a class="" href="#">Our Growing Customers</a></li>
+                        <li><a class="" href="#">Terms and Condition</a></li>
+                        <li><a class="" href="#">Contact Us</a></li>
+                        <li><a class="" href="#">News and Events</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3 footer-box">
+                    <ul>
+                        <b>Products & Services</b>
+                        <li><a class="" href="#">DNC</a></li>
+                        <li><a class="" href="#">Machine Monitoring</a></li>
+                        <li><a class="" href="#">PDM</a></li>
+                        <li><a class="" href="#">Programming Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer-box footer-address">
+                    <ul>
+                        <b>Address</b>
+                        <li>Hampden, MA 01036</li>
+                        <li>Massachusetts: 413.566.0100</li>
+                        <li>Pennsylvania: 267.603.5582</li>
+                    </ul>
+
+                    <ul>
+                        <b>Send us an email</b>
+                        <li>info@nexasamerica.com</li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <hr>
+                <div class="col-md-6 col-sm-12">
+                    <p class="footer-policy">
+                        <a href="">Terms and Condition &nbsp;</a>
+                        <a href="">Privacy Policy &nbsp;</a>
+                        <a href="">Cookie Policy</a>
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <p class="footer-copyright">© 2022 Nexas America LLC. All rights reserved.</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+
+
+
+
+    </script>
+
+
+    <script>
+        window.onbeforeunload = () => {
+            window.scrollTo(0, 0);
+        };
+    </script>
+
+
+
+</body>
+
+</html>

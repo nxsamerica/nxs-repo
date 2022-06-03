@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="header">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="">
+
+  <title>Nexas America</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+
+
+    html,
+    body {
+
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+      max-width: 100%;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      color: var(--body);
+      box-sizing: border-box;
+      margin: 0;
+      top: 0;
+      left: 0;
+
+      background-color: #deebff;
+
+    }
+
+
+
+    a {
+      text-decoration: none;
+      color: rgba(34, 54, 69, .7);
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #2A4DAD;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+
+
+
+    #footer {
+      background-color: #25254D;
+      color: whitesmoke;
+      width: 100%;
+      padding-top: 10%;
+    }
+
+    .footer-img {
+      width: 100%;
+    }
+
+    .footer-box {
+      padding: 10px;
+    }
+
+    .footer-box img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .footer-box ul {
+      list-style-type: none;
+      text-align: left;
+    }
+
+    .footer-box li {
+      font-size: 15px;
+    }
+
+    .footer-box a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    .footer-box a:hover {
+      color: #215bfb;
+    }
+
+    .footer-box p {
+      color: whitesmoke;
+    }
+
+    .footer-address li {
+      color: whitesmoke;
+
+    }
+
+    .footer-email li {
+      color: #666;
+    }
+
+    .footer-policy a {
+      color: white;
+      font-size: 10px;
+    }
+
+    .footer-policy a:hover {
+      color: #215bfb;
+    }
+
+    .footer-copyright {
+
+      font-size: 15px;
+      text-align: right;
+
+    }
+
+    .footer-info {
+      font-size: 15px;
+    }
+
+    .social-icons-footer img {
+      width: 30px;
+    }
+
+
+
+
+
+
+
+
+
+    .social-icons img {
+      width: 100px;
+      padding: 10px;
+    }
+
+    .social-icons-footer img {
+      width: 20px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-space {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /*standard value for mobile devices, bootstrap is mobile first: */
+    .content {
+      margin-top: 200px;
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      .content {
+        margin-top: 100px;
+      }
+    }
+
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      .content {
+        margin-top: 80px;
+      }
+    }
+
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      .content {
+        margin-top: 60px;
+      }
+    }
+
+
+    #services {
+      padding-top: 10%;
+      padding-bottom: 5%;
+
+    }
+
+
+    .section-title {
+      color: white;
+      text-align: center;
+      padding-top: 10%;
+      height: 500px;
+      background-color: #03e5b7;
+      background-image: linear-gradient(315deg, #03e5b7 0%, #037ade 74%);
+
+    }
+
+
+    .title {
+      padding-bottom: 3%;
+
+
+    }
+
+
+    .service-img {
+      width: 80px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .services-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+
+
+
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 100px) {
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .card-2 {
+      margin: 0vh;
+      box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+      transition: transform .45s ease, background .45s ease;
+      overflow: hidden;
+      min-height: 500px;
+      width: 300px;
+      color: white;
+      flex-direction: row;
+      flex-grow: 1;
+
+    }
+
+    .card-2.card-body {
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card-2:hover {
+      cursor: pointer;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      background-color: #bbdefb;
+      color: #25254d;
+    }
+
+    .card-2:hover .card-body {
+      margin-top: 10px;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .card-2 {
+        min-height: 450px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .card-2 {
+        min-height: 200px;
+      }
+    }
+
+    .card-2 .card-footer {
+      background: none;
+      border-top: none;
+    }
+
+    .link-text {
+      display: block;
+      color: #1d98fd;
+      margin: auto 0 0;
+      transition: color 0.45s ease;
+    }
+
+    .link-text svg {
+      margin-left: 0.5em;
+      transition: transform 0.6s ease;
+    }
+
+    .link-text svg path {
+      transition: fill 0.45s ease;
+    }
+
+
+    .card-2 .card-meta {
+      color: #3e3efa;
+    }
+
+    .card-2:hover .card-meta {
+      color: rgb(228, 228, 0);
+    }
+
+
+
+
+    .box-1 {
+      background-color: #05aaff;
+      color: white;
+      padding: 3%;
+      border-radius: 15px;
+    }
+
+    .box-2 {
+      background-color: #282F6C;
+      padding: 3%;
+
+    }
+
+
+    .box-3 {
+      background-color: #151755;
+      padding: 3%;
+    }
+
+
+    .box-4 {
+      background-color: #090839;
+      padding: 3%;
+    }
+
+
+
+
+    .card {
+      margin: 1vh;
+      box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+      transition: transform .45s ease, background .45s ease;
+      overflow: hidden;
+      border-radius: 15px;
+      border-color: gainsboro;
+      min-height: 450px;
+      width: 300px;
+      color: #25254D;
+      background-color: white;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1%;
+      flex-grow: 1;
+
+    }
+
+
+
+    .card h3 {
+
+      font-size: 2em;
+
+      padding-bottom: .5em;
+      margin: 0 0 0.142857143em;
+      border-bottom: 2px solid #25254D;
+    }
+
+
+    .card .card-body {
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card:hover {
+      cursor: pointer;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      background-color: #25254D;
+      color: white;
+    }
+
+    .card:hover .card-body {
+      margin-top: 10px;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+
+    @media (max-width: 768px) {
+      .card {
+        min-height: 450px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .card {
+        min-height: 200px;
+      }
+    }
+
+    .card .card-footer {
+      background: none;
+      border-top: none;
+    }
+
+    .link-text {
+      display: block;
+      color: #1d98fd;
+      margin: auto 0 0;
+      transition: color 0.45s ease;
+    }
+
+    .link-text svg {
+      margin-left: 0.5em;
+      transition: transform 0.6s ease;
+    }
+
+    .link-text svg path {
+      transition: fill 0.45s ease;
+    }
+
+
+
+
+
+    .card .card-meta {
+      color: #3e3efa;
+    }
+
+    .card:hover .card-meta {
+      color: rgb(228, 228, 0);
+    }
+
+
+
+    .btn:link,
+    .btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all .2s;
+      position: relative;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-white {
+      background-color: #fff;
+      color: #215bfb;
+      font-size: 15px;
+    }
+
+
+    /*Design Box*/
+
+    .design-col {
+      box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+      transition: transform .45s ease, background .45s ease;
+      overflow: hidden;
+      min-height: 450px;
+      width: 300px;
+      color: white;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-grow: 1;
+
+    }
+
+    .design-col ul {
+      list-style-type: circle;
+      font-size: 15px;
+    }
+
+    .design-col:hover {
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      background-color: #f3d76b;
+      color: #25254D;
+    }
+
+    .des-img {
+      width: 600px;
+    }
+
+    .shining-text {
+
+      text-align: center;
+      font-size: 60px;
+      font-family: Poppins, sans-serif;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #FDCF1D, #fff, #FDCF1D);
+      letter-spacing: 5px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: shine 5s linear infinite;
+      position: relative;
+      padding-bottom: 0;
+    }
+
+    @keyframes shine {
+      0% {
+        background-position-x: -500%;
+      }
+
+      100% {
+        background-position-x: 500%;
+      }
+    }
+
+    .general-title {
+      font-size: 55px;
+      color: #25254D;
+      font-weight: 5px;
+    }
+
+    /* Banner */
+
+
+    #banner {
+      padding: 2%;
+      min-height: 500px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+
+    .banner-container {
+      flex-direction: row;
+      overflow: hidden;
+      min-height: 300px;
+      justify-content: center;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .banner-container ul {
+      list-style-type: square;
+    }
+
+
+    .banner-1 {
+
+      max-width: 700px;
+      padding: 3%;
+    }
+
+    .banner-2 {
+
+      max-width: 800px;
+    }
+
+
+    .banner-img {
+      padding: 0;
+      width: 100%;
+      max-width: 500px;
+
+    }
+
+    .banner-title {
+      font-size: 55px;
+      color: #011068;
+      padding-right: 6%;
+
+    }
+
+    .banner-title-1 {
+      font-size: 30px;
+      color: #011068;
+      padding-right: 6%;
+
+    }
+
+
+    .sub-text {
+      font-weight: 500px;
+      font-size: 15px;
+      color: grey;
+    }
+
+    .banner-sub-text {
+      font-weight: 500px;
+      font-size: 15px;
+      color: white; 
+
+    }
+
+    .banner-container-1 {
+      background-color: #25254D;
+      color: white;
+      text-align: center;
+      padding: 2%;
+    }
+
+    .b-text {
+      font-size: 20px;
+      text-align: left;
+      
+    }
+    
+    .b-text-1 {
+      font-size: 20px;
+      text-align: left;
+      padding: 5%;
+    }
+
+
+
+
+
+    .navbar {
+      background-color: #25254D;
+      color: #000000;
+    }
+
+    .navbar-brand img {
+      width: 50%;
+    }
+
+    .nav-item {
+      font-size: large;
+
+    }
+
+    .general-title {
+      font-size: 80px;
+      color: #363670;
+      font-weight: 5px;
+
+    }
+
+
+
+
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/true logo eps exact copy.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown" size="10">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <li>
+                <div class="container">
+                  <h6>DNC Communication</h6>
+                </div>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Fusion DNC</a></li>
+              <li><a class="dropdown-item" href="#">Fusion FlashDNC</a></li>
+              <li><a class="dropdown-item" href="#">Fusion MobileDNC</a></li>
+              <li><a class="dropdown-item" href="#">Predator DNC</a></li>
+
+              <hr class="dropdown-divider">
+
+
+              <li>
+                <div class="container">
+                  <h6>Machine Monitoring</h6>
+                </div>
+              </li>
+
+              <li><a class="dropdown-item" href="#">DataXchange</dATAg></a></li>
+              <li><a class="dropdown-item" href="#">pWidgets Master View</a></li>
+
+              <hr class="dropdown-divider">
+
+              <li><a class="dropdown-item" href="#">App Development and Programming </dATAg></a></li>
+
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Hardware</a></li>
+
+
+
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Support</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">Technical</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">Blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">News</a></li>
+              <li><a class="dropdown-item" href="#">Tradeshows</a></li>
+              <li><a class="dropdown-item" href="#">Webinars</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-warning btn-sm" href="#" tabindex="-1">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+  <!-- Products & Services-->
+
+  <section id="services">
+
+
+
+    <div class="wrapper">
+      <div class="container">
+        <h2 class="general-title">pWidgets™ Master View</h2>
+        <h5 class="display-6 banner-title-1">
+          Modernize your DNC System. Make it Mobile!
+        </h5>
+        <div class="title">
+        </div>
+      </div>
+    </div>
+
+    <div id="banner">
+
+      <div class="banner-container banner-2">
+        <img src="images/pwidgetmasterviewsc.png" class="des-img" alt="">
+      </div>
+
+      <div class="banner-container banner-1">
+        <p class="banner-title-1">
+          Powerful Add-on tools for your Predator MDC™ System
+        </p>
+        <p class="b-text"> pWidgets Master View gives you the best of both worlds. The proven and time-tested
+          power of Predator MDC plus a brand-new level of metrics and analytics that you can configure and run on an
+          unlimited number of PCs in your shop.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <small>*Works with Predator MDC versions 10 and 11 </small>
+        <p></p>
+        <small>*Predator MDC™, Touch HMI™ and the Predator “gear with bear paw” logo are trademarks of Predator
+          Software, Inc</small>
+
+      </div>
+    </div>
+
+    <div id="banner" class="banner-container-1">
+
+      <div class="banner-container banner-1">
+        <h3 class="display-6 ">The View that you want, with the Data that you need.</h3>
+        <p class="banner-sub-text"> <b> Choose rows, columns, column-order, colors and more </b></p>
+        <p></p>
+        <p>Configure what you want to see and how you want to see it. View a single machine or multiple machines. All
+          with a few clicks.</p>
+        <p></p>
+        <p class="banner-sub-text"><b>Target Part Count vs Actual Part Count</b></p>
+        <p>Master View reads the “Standard Times” for each machine and part combination in the Predator MDC database.
+          Using that information, it calculates Target Part Count, compares that with Actual Part Count and displays the
+          information both numerically and with a color-coded performance graphic.</p>
+        <p></p>
+        <p class="banner-sub-text"><b>Shifts with Breaks</b></p>
+        <p>The Master View's “Shifts with Breaks” lets you exclude lunch and other break times from Target Part Counts
+          or other metrics.</p>
+
+
+      </div>
+
+      <div class="banner-container banner-2">
+        <img src="images/pwidgetmasterviewsc376x266.png" class="des-img" alt="">
+      </div>
+
+    </div>
+
+    <div id="banner">
+
+      <div class="banner-container banner-2">
+        <img src="images/pwidget hmi sc-u14624.png" class="des-img" alt="">
+      </div>
+
+
+      <div class="banner-container banner-1">
+        <h3 class="display-6 banner-title-1">Launch your Predator Touch HMI™ only as needed.</h3>
+        <p></p>
+        <p>No need to fill your operator’s computer display with a large grid of buttons. Put a small pWidgets™ Master
+          View on each operator’s PC. Press the “Open HMI” button to launch the Touch HMI for a specific machine only
+          when needed.</p>
+        <p></p>
+        <p>Once an HMI entry is made, pWidgets real-time status feedback can alert an operator to a mistake. Thus, most
+          HMI entry mistakes can be seen and corrected almost immediately.</p>
+        <p></p>
+
+
+      </div>
+
+    </div>
+
+
+    <div id="banner" class="banner-container-1">
+
+      <div class="banner-container banner-1">
+        <h3 class="display-6 ">Unlimited Client Installations</h3>
+        <p>The pWidgets Master View license is site-based. Deploy it on an unlimited number of computers throughout your
+          shop. Pricing is based on the total number of CNC machines you select to view.</p>
+
+
+      </div>
+
+      <div class="banner-container banner-2">
+        <img src="images/monitor-2728120_1280.jpg" class="des-img" alt="">
+      </div>
+
+    </div>
+
+    <div id="banner">
+
+      <div class="banner-container banner-2">
+        <img src="images/adobestock_57632350b.jpg" class="des-img" alt="">
+      </div>
+
+      <div class="banner-container banner-1">
+        <h3 class="display-6 banner-title-1">Factory Specific Solutions</h3>
+        <p>Does your company have a unique need? The system experts at Nexas America can work with you to maximize the
+          utility of your Predator MDC system by creating new pWidgets™ metrics or presentation formats. Our development
+          team is adept and agile; and our prices are affordable. We can work with you on other <a href="#"> software
+            projects</a> too.
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </section>
+
+  <!-- If already have a DNC -->
+
+
+
+
+
+
+  <!-- footer -->
+  <section id="footer">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer-box footer-info">
+          <img src="images/true logo eps exact copy.png" alt="">
+          <p>Nexas America and its affiliates bring together a team of world-class companies and individuals with
+            products and services aimed at helping manufacturers better compete in today's competitive and highly
+            automated manufacturing environment</p>
+          <div class="social-icons-footer">
+            <a href="#"><img src="images/facebook.png" alt=""></a>
+            <a href="#"><img src="images/twitter.png" alt=""></a>
+            <a href="#"><img src="images/youtube.png" alt=""></a>
+            <a href="#"><img src="images/linkedin.png" alt=""></a>
+          </div>
+
+
+        </div>
+
+
+        <div class="col-md-3 footer-box">
+          <ul>
+            <b>Company</b>
+            <li><a class="" href="#">About Us</a></li>
+            <li><a class="" href="#">Our Growing Customers</a></li>
+            <li><a class="" href="#">Terms and Condition</a></li>
+            <li><a class="" href="#">Contact Us</a></li>
+            <li><a class="" href="#">News and Events</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-3 footer-box">
+          <ul>
+            <b>Products & Services</b>
+            <li><a class="" href="#">DNC</a></li>
+            <li><a class="" href="#">Machine Monitoring</a></li>
+            <li><a class="" href="#">PDM</a></li>
+            <li><a class="" href="#">Programming Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 footer-box footer-address">
+          <ul>
+            <b>Address</b>
+            <li>Hampden, MA 01036</li>
+            <li>Massachusetts: 413.566.0100</li>
+            <li>Pennsylvania: 267.603.5582</li>
+          </ul>
+
+          <ul>
+            <b>Send us an email</b>
+            <li>info@nexasamerica.com</li>
+          </ul>
+
+
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <hr>
+        <div class="col-md-6 col-sm-12">
+          <p class="footer-policy">
+            <a href="">Terms and Condition &nbsp;</a>
+            <a href="">Privacy Policy &nbsp;</a>
+            <a href="">Cookie Policy</a>
+
+          </p>
+
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <p class="footer-copyright">© 2022 Nexas America LLC. All rights reserved.</p>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+<script>
+
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+
+
+
+
+
+</script>
+<script>
+
+  var nav = document.querySelector('nav');
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 10) {
+      nav.classList.add('active');
+    } else {
+      nav.classList.remove('active');
+    }
+  });
+
+
+
+</script>
+
+<script>
+  window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+  };
+</script>
+
+
+
+</body>
+
+</html>

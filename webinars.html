@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="header">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+
+    <title>Nexas America</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+
+
+        html,
+        body {
+
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+            max-width: 100%;
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--body);
+            box-sizing: border-box;
+            margin: 0;
+            top: 0;
+            left: 0;
+            background-color: #03e5b7;
+            background-image: linear-gradient(315deg, #a2eafc 0%, #3ba2f6 74%);
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: rgba(34, 54, 69, .7);
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #2A4DAD;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+
+        /*
+*
+* ==========================================
+* Transparent Navbar
+* ==========================================
+*
+*/
+        .navbar {
+            transition: all 0.4s;
+        }
+
+        .nav-img {
+            padding: 3%;
+            width: 50%;
+        }
+
+        .navbar .nav-link {
+            color: #fff;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar .navbar-brand {
+            color: #fff;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        .dropdown-menu li {
+            position: relative;
+            width: 220px;
+        }
+
+        .dropdown-menu .dropdown-submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 10px;
+            background-color: whitesmoke;
+            border-radius: 3px;
+            text-align: center;
+            padding-right: 20%;
+        }
+
+        .dropdown-menu>li:hover>.dropdown-submenu {
+            display: block;
+        }
+
+
+        /* Change navbar styling on scroll */
+        .navbar.active {
+            background: #fff;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar.active .nav-link {
+            color: #555;
+        }
+
+        .navbar.active .nav-link:hover,
+        .navbar.active .nav-link:focus {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .navbar.active .navbar-brand {
+            color: #555;
+        }
+
+
+        /* Change navbar styling on small viewports */
+        @media (max-width: 991.98px) {
+            .navbar {
+                background: #fff;
+            }
+
+            .navbar .navbar-brand,
+            .navbar .nav-item .nav-link {
+                color: #555;
+            }
+
+            .navbar .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(11, 12, 12, 10)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+        }
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+            background: no-repeat scroll center scroll;
+            -webkit-background-size: cover;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+            background-attachment: cover;
+
+        }
+
+        .carousel-item::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(21, 20, 51, 0.8);
+            z-index: 0;
+        }
+
+        .carousel-caption {
+            z-index: 1;
+            top: 55%;
+            transform: translateY(-50%);
+            bottom: initial;
+
+
+        }
+
+        .display-4 {
+            font-weight: 500;
+        }
+
+        .carousel-item img {
+            width: 100%;
+        }
+
+
+
+
+        #footer {
+            background-color: #25254D;
+            color: whitesmoke;
+            width: 100%;
+            padding-top: 20%;
+            clip-path: polygon(66% 0, 100% 17%, 100% 100%, 0 100%, 0 0, 30% 17%);
+        }
+
+        .footer-img {
+            width: 100%;
+        }
+
+        .footer-box {
+            padding: 10px;
+        }
+
+        .footer-box img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .footer-box ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .footer-box li {
+            font-size: 15px;
+        }
+
+        .footer-box a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .footer-box a:hover {
+            color: #215bfb;
+        }
+
+        .footer-box p {
+            color: whitesmoke;
+        }
+
+        .footer-address li {
+            color: whitesmoke;
+
+        }
+
+        .footer-email li {
+            color: #666;
+        }
+
+        .footer-policy a {
+            color: white;
+            font-size: 10px;
+        }
+
+        .footer-policy a:hover {
+            color: #215bfb;
+        }
+
+        .footer-copyright {
+
+            font-size: 15px;
+            text-align: right;
+
+        }
+
+        .footer-info {
+            font-size: 15px;
+        }
+
+        .social-icons-footer img {
+            width: 30px;
+        }
+
+
+
+
+
+
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+            background: no-repeat scroll center scroll;
+            -webkit-background-size: cover;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+            background-attachment: cover;
+        }
+
+        .carousel-item::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(21, 20, 51, 0.8);
+            z-index: 0;
+        }
+
+        .carousel-caption {
+            z-index: 1;
+            top: 60%;
+            transform: translateY(-50%);
+            bottom: initial;
+
+
+        }
+
+        .display-4 {
+            font-weight: 500;
+            font-family: 'Sora', sans-serif;
+        }
+
+        .carousel-item img {
+            width: 100%;
+        }
+
+
+
+
+
+
+
+        /*About*/
+
+        #partners {
+            padding: 50px 0;
+            color: #25254D;
+            background-color: white;
+        }
+
+
+
+        #about {
+
+            padding-bottom: 20px;
+            padding-top: 0;
+            color: #25254D;
+            background-color: white;
+            font-size: 1.1rem;
+
+        }
+
+        #social-media {
+            color: #25254D;
+            background-color: white;
+            padding: 50px;
+
+
+        }
+
+        .social-icons img {
+            width: 100px;
+            padding: 10px;
+        }
+
+        .social-icons-footer img {
+            width: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-space {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /*standard value for mobile devices, bootstrap is mobile first: */
+        .content {
+            margin-top: 200px;
+        }
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .content {
+                margin-top: 100px;
+            }
+        }
+
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .content {
+                margin-top: 80px;
+            }
+        }
+
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .content {
+                margin-top: 60px;
+            }
+        }
+
+
+        #services {
+
+            padding-bottom: 5%;
+            background-color: #03e5b7;
+            background-image: linear-gradient(315deg, #a2eafc 0%, #3ba2f6 74%);
+
+        }
+
+
+        .section-title {
+            color: white;
+            text-align: center;
+            padding-top: 3%;
+
+
+        }
+
+
+        .title {
+            padding-bottom: 3%;
+
+
+        }
+
+
+        .wrapper {
+
+            padding-top: 0;
+
+        }
+
+        .service-img {
+            width: 80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+
+
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 100px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .card-2 {
+            margin: 0vh;
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            min-height: 450px;
+            width: 300px;
+            color: white;
+            flex-direction: row;
+            flex-grow: 1;
+            text-align: center;
+
+        }
+
+        .card-2.card-body {
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card-2:hover {
+            cursor: pointer;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            
+            color: #090839;
+        }
+
+        .card-2:hover .card-body {
+            margin-top: 10px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+
+
+
+        @media (max-width: 768px) {
+            .card-2 {
+                min-height: 450px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .card-2 {
+                min-height: 200px;
+            }
+        }
+
+        .card-2 .card-footer {
+            background: none;
+            border-top: none;
+        }
+
+        .link-text {
+            display: block;
+            color: #1d98fd;
+            margin: auto 0 0;
+            transition: color 0.45s ease;
+        }
+
+        .link-text svg {
+            margin-left: 0.5em;
+            transition: transform 0.6s ease;
+        }
+
+        .link-text svg path {
+            transition: fill 0.45s ease;
+        }
+
+
+        .card-2 .card-meta {
+            color: #3e3efa;
+        }
+
+        .card-2:hover .card-meta {
+            color: rgb(228, 228, 0);
+        }
+
+
+
+
+        .box-1 {
+            background-color: #05aaff;
+            color: white;
+            padding: 3%;
+            border-radius: 15px;
+        }
+        
+        .box-2 {
+            background-color: #bbdefb;
+            color: rgb(5, 53, 111);
+            padding: 3%;
+
+        }
+
+
+        .box-3 {    
+            background-color: #DEEDFE;
+            color: rgb(5, 53, 111);
+            padding: 3%;
+        }
+
+
+
+        .box-4 {
+            background-color: #090839;
+            padding: 3%;
+        }
+
+
+
+
+        .card {
+            margin: 1vh;
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            border-radius: 15px;
+            border-color: gainsboro;
+            min-height: 450px;
+            width: 300px;
+            color: #25254D;
+            background-color: white;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 1%;
+            flex-grow: 1;
+
+        }
+
+
+
+        .card h3 {
+
+            font-size: 2em;
+
+            padding-bottom: .5em;
+            margin: 0 0 0.142857143em;
+            border-bottom: 2px solid #25254D;
+        }
+
+
+        .card .card-body {
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card:hover {
+            cursor: pointer;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: #25254D;
+            color: white;
+        }
+
+        .card:hover .card-body {
+            margin-top: 10px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+
+        @media (max-width: 768px) {
+            .card {
+                min-height: 450px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .card {
+                min-height: 200px;
+            }
+        }
+
+        .card .card-footer {
+            background: none;
+            border-top: none;
+        }
+
+        .link-text {
+            display: block;
+            color: #1d98fd;
+            margin: auto 0 0;
+            transition: color 0.45s ease;
+        }
+
+        .link-text svg {
+            margin-left: 0.5em;
+            transition: transform 0.6s ease;
+        }
+
+        .link-text svg path {
+            transition: fill 0.45s ease;
+        }
+
+
+
+
+
+        .card .card-meta {
+            color: #3e3efa;
+        }
+
+        .card:hover .card-meta {
+            color: rgb(228, 228, 0);
+        }
+
+
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: relative;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white {
+            background-color: #fff;
+            color: #215bfb;
+            font-size: 15px;
+        }
+
+
+        /*Design Box*/
+
+        .design-col {
+            box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+            transition: transform .45s ease, background .45s ease;
+            overflow: hidden;
+            min-height: 450px;
+            width: 300px;
+            color: white;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-grow: 1;
+
+        }
+
+        .design-col ul {
+            list-style-type: circle;
+            font-size: 15px;
+        }
+
+        .design-col:hover {
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: #f3d76b;
+            color: #25254D;
+        }
+
+        .des-img {
+            width: 600px;
+        }
+
+        .shining-text {
+
+            text-align: center;
+            font-size: 60px;
+            font-family: Poppins, sans-serif;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #FDCF1D, #fff, #FDCF1D);
+            letter-spacing: 5px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: shine 5s linear infinite;
+            position: relative;
+            padding-bottom: 0;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position-x: -500%;
+            }
+
+            100% {
+                background-position-x: 500%;
+            }
+        }
+
+        .general-title {
+            font-size: 55px;
+            color: #25254D;
+            font-weight: 5px;
+        }
+
+        /* Banner */
+
+
+        #banner {
+            padding: 2%;
+            min-height: 500px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        .banner-container {
+            flex-direction: row;
+            overflow: hidden;
+            min-height: 300px;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .banner-container ul {
+            list-style-type: square;
+        }
+
+
+        .banner-1 {
+
+            max-width: 700px;
+            padding: 3%;
+        }
+
+        .banner-2 {
+
+            max-width: 800px;
+        }
+
+
+        .banner-img {
+            padding: 0;
+            width: 100%;
+            max-width: 500px;
+
+        }
+
+        .banner-title {
+            font-size: 55px;
+            color: #011068;
+            padding-right: 6%;
+
+        }
+
+        .banner-title-1 {
+            font-size: 30px;
+            color: #011068;
+            padding-right: 6%;
+
+        }
+
+
+        .sub-text {
+            font-weight: 500px;
+            font-size: 15px;
+            color: grey;
+        }
+
+        .banner-sub-text {
+            font-weight: 500px;
+            font-size: 15px;
+            color: black;
+
+
+
+        }
+
+            #reg-form {
+                padding-top: 0%;
+            }
+
+            .reg-form-side-text {
+                place-items: center;
+                vertical-align: middle;
+            }
+
+
+
+            form-body {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+            }
+
+
+
+            .form-holder {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+            }
+
+            .form-holder .form-content {
+
+                position: relative;
+                text-align: center;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                align-items: center;
+                padding: 60px;
+            }
+
+            .form-content .form-items {
+                border: 1px solid white;
+                padding: 40px;
+                display: inline-block;
+                width: 100%;
+                min-width: 540px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                text-align: left;
+                -webkit-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+            }
+
+            .form-content h3 {
+                color: #3c3c75;
+                text-align: left;
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            .form-content h3.form-title {
+                margin-bottom: 30px;
+            }
+
+            .form-content p {
+                color: #fff;
+                text-align: left;
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 20px;
+                margin-bottom: 30px;
+            }
+
+
+            .form-content label,
+            .was-validated .form-check-input:invalid~.form-check-label,
+            .was-validated .form-check-input:valid~.form-check-label {
+                color: #fff;
+            }
+
+            .form-content input[type=text],
+            .form-content input[type=password],
+            .form-content input[type=email],
+            .form-content select {
+                width: 100%;
+                padding: 9px 20px;
+                text-align: left;
+                border: 0;
+                outline: 0;
+                border-radius: 6px;
+                background-color: #fff;
+                font-size: 15px;
+                font-weight: 300;
+                color: #8D8D8D;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                margin-top: 16px;
+            }
+
+
+            .btn-primary {
+                background-color: #6C757D;
+                outline: none;
+                border: 0px;
+                box-shadow: none;
+            }
+
+            .btn-primary:hover,
+            .btn-primary:focus,
+            .btn-primary:active {
+                background-color: #495056;
+                outline: none !important;
+                border: none !important;
+                box-shadow: none;
+            }
+
+            .form-content textarea {
+                position: static !important;
+                width: 100%;
+                padding: 8px 20px;
+                border-radius: 6px;
+                text-align: left;
+                background-color: #fff;
+                border: 0;
+                font-size: 15px;
+                font-weight: 300;
+                color: #8D8D8D;
+                outline: none;
+                resize: none;
+                height: 120px;
+                -webkit-transition: none;
+                transition: none;
+                margin-bottom: 14px;
+            }
+
+            .form-content textarea:hover,
+            .form-content textarea:focus {
+                border: 0;
+                background-color: #ebeff8;
+                color: #8D8D8D;
+            }
+
+            .mv-up {
+                margin-top: -9px !important;
+                margin-bottom: 8px !important;
+            }
+
+            .invalid-feedback {
+                color: #ff606e;
+            }
+
+            .valid-feedback {
+                color: #2acc80;
+            }
+
+
+        .webinar-img {
+            width: 100%;
+            padding-top: 0%;
+        }
+
+        .webinar-title {
+            font-size: 100px;
+            font-weight: 30px;
+        }
+
+        .web-img
+        {
+            width:30%;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg header-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="nav-img" src="/images/true logo eps exact copy.png" alt="">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    DNC Communication &raquo;
+                                </a>
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu item 1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu item 2</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu</a>
+
+                                        <ul class="dropdown-submenu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Multi level 1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Multi level 2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu item 4</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu item 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Machine Monitoring &raquo;
+                                </a>
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu item 1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu item 2</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu</a>
+
+                                        <ul class="dropdown-submenu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Multi level 1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Multi level 2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu item 4</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Submenu item 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a class="dropdown-item" href="#">Production Document Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">App Development & Programming</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">Hardware</a>
+                            </li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Technical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Products & Services-->
+
+
+    <div class="section-title">
+        <div id="banner">
+
+            <div class="banner-container banner-2">
+                <br><br><br>
+                <h1 class="webinar-title">Nexas Webinars</h1>
+                <h5 class="display-6 banner-title-1">
+                    Don't miss our free Webinars!
+                </h5>
+                <p>
+                    Nexas America's webinars are a convenient way to learn more about our products and how they can
+                    benefit your shop. We generally have 2 different types of webinars:
+
+                </p>
+
+            </div>
+
+            <div class="banner-container banner-1">
+                <img src="images/webinar-reg.png" alt="" class="webinar-img">
+
+            </div>
+        </div>
+
+
+        <div class="services-container">
+            <div class="card-2 box-2">
+
+                <div class="card-body">
+                    <div>
+                        <img src="images/7-min.png" alt="" class="web-img">
+                    </div>
+
+                   
+
+                    <h1 class="display-5">
+
+                        7-Minute Webinar Series™</h1>
+                        
+
+                    <small>
+                        Our 7-Minute Webinars provide a short presentation that lasts approximately 7 minutes. You
+                        get to learn a lot, in a short period of time. We repeat the presentation 4 times in a half
+                        hour and you can join in or leave at any time.
+                    </small>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="card-2 box-3">
+
+                <div class="card-body">
+                    <div>
+                        <img src="images/Full-web.png" alt="" class="web-img">
+                    </div>
+                    
+                    <h1 c   lass="display-5">Full Product Webinars</h1>
+
+                    <small>
+                        Our Full Product Webinars generally last between 30-90 minutes. They give you more time to
+                        learn about the benefits of our product and to ask our technical specialists any questions
+                        you may have.
+                    </small>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="banner">
+
+            <div class="banner-container banner-2">
+                
+                <h1 class="webinar-title">Upcoming Webinars</h1>
+                <h5 class="display-6 banner-title-1">
+                    • Machine Data Collection: (Invest Your Leftover Budget, Tuesday, Dec 14, 2PM)
+                </h5>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="seperator">____</div>
+                <h5 class="display-6 ">
+                You can also view previously recorded webinars on our <a href="#">YouTube channel</a>.
+
+                </h5>
+
+            </div>
+
+            <div class="banner-container banner-1">
+                <div class="form-body">
+                    <div class="row">
+                        <div class="form-holder">
+                            <div class="form-content">
+                                <div class="form-items">
+                                    <h3>Webinar Registration</h3>
+                                    <p>Please fill out this form to sign up for one of our upcoming scheduled sessions. </p>
+                                    <form class="requires-validation" novalidate>
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="text" name="name"
+                                                placeholder="Full Name" required>
+                                            <div class="valid-feedback">Username field is valid!</div>
+                                            <div class="invalid-feedback">Username field cannot be blank!</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="text" name="name"
+                                                placeholder="Company Name" required>
+                                            <div class="valid-feedback">Username field is valid!</div>
+                                            <div class="invalid-feedback">Username field cannot be blank!</div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="email" name="email"
+                                                placeholder="E-mail Address" required>
+                                            <div class="valid-feedback">Email field is valid!</div>
+                                            <div class="invalid-feedback">Email field cannot be blank!</div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <select class="form-select mt-3" required>
+                                                <option selected disabled value="">Webinar to Attend</option>
+                                                <option value="jweb">Machine Data Collection: Leftover Budget?
+                                                    Invest it</option>
+                                            </select>
+                                            <div class="valid-feedback">You selected a webinar!</div>
+                                            <div class="invalid-feedback">Please select a webinar you'd like to attend!</div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <br>
+
+                                                <textarea id="message" name="message"
+                                                rows="5" cols="33">
+                                                Message(Optional)
+                                                </textarea>
+                                        </div>
+                                        
+
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="invalidCheck" required>
+                                            <label class="form-check-label">I confirm that all data are
+                                                correct</label>
+                                            <div class="invalid-feedback">Please confirm that the entered data are
+                                                all correct!</div>
+                                        </div>
+
+
+                                        <div class="form-button mt-3">
+                                            <button id="submit" type="submit"
+                                                class="btn btn-primary">Register</button>
+                                            <button id="submit" type="submit"
+                                                class="btn btn-primary">Clear Form</button>
+                                                
+                                                
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- If already have a DNC -->
+
+
+
+
+
+
+    <!-- footer -->
+    <section id="footer">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-box footer-info">
+                    <img src="images/true logo eps exact copy.png" alt="">
+                    <p>Nexas America and its affiliates bring together a team of world-class companies and individuals
+                        with products and services aimed at helping manufacturers better compete in today's competitive
+                        and highly automated manufacturing environment</p>
+                    <div class="social-icons-footer">
+                        <a href="#"><img src="images/facebook.png" alt=""></a>
+                        <a href="#"><img src="images/twitter.png" alt=""></a>
+                        <a href="#"><img src="images/youtube.png" alt=""></a>
+                        <a href="#"><img src="images/linkedin.png" alt=""></a>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-md-3 footer-box">
+                    <ul>
+                        <b>Company</b>
+                        <li><a class="" href="#">About Us</a></li>
+                        <li><a class="" href="#">Our Growing Customers</a></li>
+                        <li><a class="" href="#">Terms and Condition</a></li>
+                        <li><a class="" href="#">Contact Us</a></li>
+                        <li><a class="" href="#">News and Events</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3 footer-box">
+                    <ul>
+                        <b>Products & Services</b>
+                        <li><a class="" href="#">DNC</a></li>
+                        <li><a class="" href="#">Machine Monitoring</a></li>
+                        <li><a class="" href="#">PDM</a></li>
+                        <li><a class="" href="#">Programming Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer-box footer-address">
+                    <ul>
+                        <b>Address</b>
+                        <li>Hampden, MA 01036</li>
+                        <li>Massachusetts: 413.566.0100</li>
+                        <li>Pennsylvania: 267.603.5582</li>
+                    </ul>
+
+                    <ul>
+                        <b>Send us an email</b>
+                        <li>info@nexasamerica.com</li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <hr>
+                <div class="col-md-6 col-sm-12">
+                    <p class="footer-policy">
+                        <a href="">Terms and Condition &nbsp;</a>
+                        <a href="">Privacy Policy &nbsp;</a>
+                        <a href="">Cookie Policy</a>
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <p class="footer-copyright">© 2022 Nexas America LLC. All rights reserved.</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+
+
+
+
+
+</script>
+<script>
+
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 10) {
+            nav.classList.add('active');
+        } else {
+            nav.classList.remove('active');
+        }
+    });
+
+
+
+</script>
+
+<script>
+    window.onbeforeunload = () => {
+        window.scrollTo(0, 0);
+    };
+</script>
+
+<script>
+    (function () {
+        'use strict'
+        const forms = document.querySelectorAll('.requires-validation')
+        Array.from(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+
+</script>
+
+</body>
+
+</html>

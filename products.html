@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="header">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="">
+
+  <title>Nexas America</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sora:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+
+
+    html,
+    body {
+
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+      max-width: 100%;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      color: var(--body);
+      box-sizing: border-box;
+      margin: 0;
+      top: 0;
+      left: 0;
+
+      background-color: #deebff;
+    }
+
+
+
+    a {
+      text-decoration: none;
+      color: rgba(34, 54, 69, .7);
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #2A4DAD;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+
+    /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+    
+
+
+
+    #footer {
+      background-color: #25254D;
+      color: whitesmoke;
+      width: 100%;
+      padding-top: 10%;
+    }
+
+    .footer-img {
+      width: 100%;
+    }
+
+    .footer-box {
+      padding: 10px;
+    }
+
+    .footer-box img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .footer-box ul {
+      list-style-type: none;
+      text-align: left;
+    }
+
+    .footer-box li {
+      font-size: 15px;
+    }
+
+    .footer-box a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    .footer-box a:hover {
+      color: #215bfb;
+    }
+
+    .footer-box p {
+      color: whitesmoke;
+    }
+
+    .footer-address li {
+      color: whitesmoke;
+
+    }
+
+    .footer-email li {
+      color: #666;
+    }
+
+    .footer-policy a {
+      color: white;
+      font-size: 10px;
+    }
+
+    .footer-policy a:hover {
+      color: #215bfb;
+    }
+
+    .footer-copyright {
+
+      font-size: 15px;
+      text-align: right;
+
+    }
+
+    .footer-info {
+      font-size: 15px;
+    }
+
+    .social-icons-footer img {
+      width: 30px;
+    }
+
+
+
+
+
+
+
+
+    #banner {
+
+      padding-top: 6%;
+      
+    }
+
+    .banner-img {
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+
+    }
+
+    .banner-title {
+      font-size: 55px;
+      color: #25254D;
+      padding-right: 6%;
+    }
+
+    .sub-text {
+      font-weight: 500px;
+      font-size: 15px;
+      color: grey;
+    }
+
+    /*About*/
+
+
+    .social-icons img {
+      width: 100px;
+      padding: 10px;
+    }
+
+    .social-icons-footer img {
+      width: 20px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-space {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /*standard value for mobile devices, bootstrap is mobile first: */
+    .content {
+      margin-top: 200px;
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      .content {
+        margin-top: 100px;
+      }
+    }
+
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      .content {
+        margin-top: 80px;
+      }
+    }
+
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      .content {
+        margin-top: 60px;
+      }
+    }
+
+
+    #services {
+      padding-top: 10%;
+      padding-bottom: 5%;
+      
+    }
+
+
+    .section-title {
+      color: white;
+      text-align: center;
+      padding-top: 10%;
+      height: 500px;
+      background: linear-gradient(90deg, gold 50%, #25254D 50%);
+      clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 80%, 66% 96%, 33% 79%, 0 100%, 0% 43%, 0 0);
+    }
+
+
+    .title {
+      padding-bottom: 3%;
+
+
+    }
+
+
+    .wrapper {
+      
+      padding-top: 0;
+    }
+
+    .service-img {
+      width: 80px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .services-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+
+
+
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 100px) {
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .card-2 {
+      margin: 0vh;
+      box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+      transition: transform .45s ease, background .45s ease;
+      overflow: hidden;
+      min-height: 500px;
+      width: 300px;
+      color: white;
+      flex-direction: row;
+      flex-grow: 1;
+      
+      
+
+    }
+
+    .card-2.card-body {
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card-2:hover {
+      cursor: pointer;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      background-color: #acd6f8;
+      color: #25254d;
+    }
+
+    .card-2:hover .card-body {
+      margin-top: 10px;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .card-2 {
+        min-height: 450px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .card-2 {
+        min-height: 200px;
+      }
+    }
+
+    .card-2 .card-footer {
+      background: none;
+      border-top: none;
+    }
+
+    .link-text {
+      display: block;
+      color: #1d98fd;
+      margin: auto 0 0;
+      transition: color 0.45s ease;
+    }
+
+    .link-text svg {
+      margin-left: 0.5em;
+      transition: transform 0.6s ease;
+    }
+
+    .link-text svg path {
+      transition: fill 0.45s ease;
+    }
+
+
+    .card-2 .card-meta {
+      color: #3e3efa;
+    }
+
+    .card-2:hover .card-meta {
+      color: rgb(228, 228, 0);
+    }
+
+
+
+
+    .box-1 {
+      background-color: #bbdefb;
+      color: #25254D;
+      padding: 3%;
+      
+
+    }
+
+    .box-2 {
+      background-color: #282F6C;
+      padding: 3%;
+
+    }
+
+
+    .box-3 {
+      background-color: #151755;
+      padding: 3%;
+    }
+
+
+    .box-4 {
+      background-color: #090839;
+      padding: 3%;
+    }
+
+
+
+
+    .card {
+      margin: 1vh;
+      box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+      transition: transform .45s ease, background .45s ease;
+      overflow: hidden;
+      border-radius: 15px;
+      border-color: #25254dc8;
+      min-height: 450px;
+      width: 300px;
+      color: #25254D;
+      background-color: #deebff;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1%;
+      flex-grow: 1;
+
+    }
+
+    .card h3 {
+
+      font-size: 1.3em;
+
+      padding-bottom: .5em;
+      margin: 0 0 0.142857143em;
+      border-bottom: 2px solid #25254D;
+    }
+
+
+    .card .card-body {
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card:hover {
+      cursor: pointer;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      background-color: #25254D;
+      color: white;
+    }
+
+    .card:hover .card-body {
+      margin-top: 10px;
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+
+    @media (max-width: 768px) {
+      .card {
+        min-height: 450px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .card {
+        min-height: 200px;
+      }
+    }
+
+    .card .card-footer {
+      background: none;
+      border-top: none;
+    }
+
+    .link-text {
+      display: block;
+      color: #1d98fd;
+      margin: auto 0 0;
+      transition: color 0.45s ease;
+    }
+
+    .link-text svg {
+      margin-left: 0.5em;
+      transition: transform 0.6s ease;
+    }
+
+    .link-text svg path {
+      transition: fill 0.45s ease;
+    }
+
+
+
+
+
+    .card .card-meta {
+      color: #3e3efa;
+    }
+
+    .card:hover .card-meta {
+      color: rgb(228, 228, 0);
+    }
+
+
+
+    .btn:link,
+    .btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all .2s;
+      position: relative;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-white {
+      background-color: #fff;
+      color: #215bfb;
+      font-size: 15px;
+    }
+
+
+
+
+
+
+
+
+    .shining-text {
+
+      text-align: center;
+      font-size: 60px;
+      font-family: Poppins, sans-serif;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #FDCF1D, #fff, #FDCF1D);
+      letter-spacing: 5px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: shine 5s linear infinite;
+      position: relative;
+      padding-bottom: 0;
+    }
+
+    @keyframes shine {
+      0% {
+        background-position-x: -500%;
+      }
+
+      100% {
+        background-position-x: 500%;
+      }
+    }
+
+    .general-title {
+      font-size: 80px;
+      color: #363670;
+      font-weight: 5px;
+      text-align: center;
+    }
+
+
+    
+    .navbar {
+      background-color: #25254D;
+      color: #000000;
+    }
+
+    .navbar-brand img {
+      width: 50%;
+    }
+
+    .nav-item {
+      font-size: large;
+
+    }
+
+    .service-img-2
+    {
+      width: 20%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/true logo eps exact copy.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown" size="10">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <li>
+                <div class="container">
+                  <h6>DNC Communication</h6>
+                </div>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Fusion DNC</a></li>
+              <li><a class="dropdown-item" href="#">Fusion FlashDNC</a></li>
+              <li><a class="dropdown-item" href="#">Fusion MobileDNC</a></li>
+              <li><a class="dropdown-item" href="#">Predator DNC</a></li>
+
+              <hr class="dropdown-divider">
+
+
+              <li>
+                <div class="container">
+                  <h6>Machine Monitoring</h6>
+                </div>
+              </li>
+
+              <li><a class="dropdown-item" href="#">DataXchange</dATAg></a></li>
+              <li><a class="dropdown-item" href="#">pWidgets Master View</a></li>
+
+              <hr class="dropdown-divider">
+
+              <li><a class="dropdown-item" href="#">App Development and Programming </dATAg></a></li>
+
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Hardware</a></li>
+
+
+
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Support</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">Technical</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">Blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">News</a></li>
+              <li><a class="dropdown-item" href="#">Tradeshows</a></li>
+              <li><a class="dropdown-item" href="#">Webinars</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-warning btn-sm" href="#" tabindex="-1">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Products & Services-->
+
+
+
+
+  <section id="services">
+
+
+
+    <div class="wrapper">
+      <div class="container" data-aos="fade-up">
+
+        <div class="title">
+          <h1 class="general-title flex-center">Products and Services</h1>
+          <p class="sub-text">Our solutions include products from our own development team like the ORiON™ CNC
+            Productivity Hub, and software solutions from industry leading developers like Predator. We help you find
+            the best solution for your needs, then help maximize your benefits with world-class installation, training
+            and support. </p>
+        </div>
+
+        <div class="services-container">
+
+          <div class="card card-has-bg">
+            <div class="d-flex flex-column">
+              <div class="card-body">
+                <div>
+                  <img src="images/dnc-service.png" alt="" class="service-img">
+                </div>
+
+                <small class="card-meta mb-2">Connect</small>
+                <h3 class="">DNC</h3>
+
+                <small>Nexas offers a variety of best in class DNC Software from industry leaders such as Predator, to
+                  our own powerful and convenient Fusion FlashDNC software.</small>
+              </div>
+              <div class="card-footer">
+                <span class="link-text">
+                  Learn more
+                  <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                      fill="#25254D" />
+                  </svg>
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="card card-has-bg">
+            <div class="d-flex flex-column">
+              <div class="card-body">
+                <div>
+                  <img src="images/mm-service.png" alt="" class="service-img">
+                </div>
+
+                <small class="card-meta mb-2">Monitor</small>
+                <h3 class="">Machine Monitoring</h3>
+
+                <small>Monitor your equipment and improve your utilization. DataXchange PCS is machine monitoring for
+                  the 21st century.</small>
+              </div>
+              <div class="card-footer">
+                <span class="link-text">
+                  Learn more
+                  <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                      fill="#25254D" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="card card-has-bg">
+            <div class="d-flex flex-column">
+              <div class="card-body">
+                <div>
+                  <img src="images/pdm-service.png" alt="" class="service-img">
+                </div>
+
+                <small class="card-meta mb-2">Organize</small>
+                <h3 class="">PDM</h3>
+
+                <small>Organize your documents and programs to save time and money. Fusion is a cutting edge PDM System
+                  that gives you quick, easy, and intuitive control over all your Production and DNC Data. </small>
+              </div>
+              <div class="card-footer">
+                <span class="link-text">
+                  Learn more
+                  <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                      fill="#25254D" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="card card-has-bg">
+            <div class="d-flex flex-column">
+              <div class="card-body">
+                <div>
+                  <img src="images/prog-service.png" alt="" class="service-img">
+                </div>
+
+                <small class="card-meta mb-2">Innovate</small>
+                <h3 class="">Programming Services</h3>
+
+                <small>Innovate your shop with custom applications from Nexas. Full application development from
+                  detailed spefications to programming.</small>
+              </div>
+              <div class="card-footer">
+                <span class="link-text">
+                  Learn more
+                  <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                      fill="#25254D" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+
+      <div class="services-container container">
+
+        <div class="card-2 box-1">
+
+          <div class="card-body">
+            <div>
+              <img src="images/technical.png" alt="" class="service-img-2">
+            </div>
+
+            <h2 class="">Hardware</h2>
+            <small>Nexas hardware keeps you connected to all of your machines whether you need Serial, Ethernet or
+              Wireless capabilities. We provide quality products with competitive pricing from third party vendors such
+              as Moxa and Comtrol as well as our own in-house hardware such as the ORiON™ CNC Productivity Hub.</small>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn btn-white">
+              Learn more
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="services-container container">
+
+        <div class="card-2 box-2">
+
+          <div class="card-body">
+            <div>
+              <img src="images/check.png" alt="" class="service-img">
+            </div>
+
+            <h2 class="">
+
+              MTConnect®</h2>
+            <small>MTConnect® is the communication standard of choice for manufacturing. This is why our products are
+              100% MTConnect® compliant.
+
+
+
+
+
+              The MTConnect® standard enables manufacturing equipment to provide data in structured XML rather than
+              proprietary formats.</small>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn btn-white">
+              Learn more
+            </button>
+          </div>
+
+        </div>
+
+        <div class="card-2 box-3">
+
+          <div class="card-body">
+            <div>
+              <img src="images/check.png" alt="" class="service-img">
+            </div>
+
+            <h2 class="">Fusion™</h2>
+            <small>Fusion™ Production Document Organizer is a cutting edge Production Document Management (PDM) System
+              with DNC capabilities that gives you quick, easy and intuitive control over all your Production and DNC
+              Data.
+
+            </small>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn btn-white">
+              Learn more
+            </button>
+          </div>
+
+        </div>
+
+
+        <div class="card-2 box-4">
+
+          <div class="card-body">
+            <div>
+              <img src="images/check.png" alt="" class="service-img">
+            </div>
+
+            <h2 class="">DataXchange™</h2>
+            <small>
+
+              DataXchange™ is a Cloud and On-Premise machine monitoring system that increases overall equipment
+              effectiveness and shop floor productivity. Compatible with a wide variety of machines including CNC’s,
+              PLC’s, welders, and manual machines. </small>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn btn-white">
+              Learn more
+            </button>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- footer -->
+  <section id="footer">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer-box footer-info">
+          <img src="images/true logo eps exact copy.png" alt="">
+          <p>Nexas America and its affiliates bring together a team of world-class companies and individuals with
+            products and services aimed at helping manufacturers better compete in today's competitive and highly
+            automated manufacturing environment</p>
+          <div class="social-icons-footer">
+            <a href="#"><img src="images/facebook.png" alt=""></a>
+            <a href="#"><img src="images/twitter.png" alt=""></a>
+            <a href="#"><img src="images/youtube.png" alt=""></a>
+            <a href="#"><img src="images/linkedin.png" alt=""></a>
+          </div>
+
+
+        </div>
+
+
+        <div class="col-md-3 footer-box">
+          <ul>
+            <b>Company</b>
+            <li><a class="" href="#">About Us</a></li>
+            <li><a class="" href="#">Our Growing Customers</a></li>
+            <li><a class="" href="#">Terms and Condition</a></li>
+            <li><a class="" href="#">Contact Us</a></li>
+            <li><a class="" href="#">News and Events</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-3 footer-box">
+          <ul>
+            <b>Products & Services</b>
+            <li><a class="" href="#">DNC</a></li>
+            <li><a class="" href="#">Machine Monitoring</a></li>
+            <li><a class="" href="#">PDM</a></li>
+            <li><a class="" href="#">Programming Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 footer-box footer-address">
+          <ul>
+            <b>Address</b>
+            <li>Hampden, MA 01036</li>
+            <li>Massachusetts: 413.566.0100</li>
+            <li>Pennsylvania: 267.603.5582</li>
+          </ul>
+
+          <ul>
+            <b>Send us an email</b>
+            <li>info@nexasamerica.com</li>
+          </ul>
+
+
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <hr>
+        <div class="col-md-6 col-sm-12">
+          <p class="footer-policy">
+            <a href="">Terms and Condition &nbsp;</a>
+            <a href="">Privacy Policy &nbsp;</a>
+            <a href="">Cookie Policy</a>
+
+          </p>
+
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <p class="footer-copyright">© 2022 Nexas America LLC. All rights reserved.</p>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+<script>
+
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+
+
+
+
+
+</script>
+
+
+<script>
+  window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+  };
+</script>
+
+
+
+</body>
+
+</html>
