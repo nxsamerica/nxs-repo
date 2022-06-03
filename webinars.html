@@ -32,8 +32,7 @@
             margin: 0;
             top: 0;
             left: 0;
-            background-color: #03e5b7;
-            background-image: linear-gradient(315deg, #a2eafc 0%, #3ba2f6 74%);
+            background-color: #deebff;
         }
 
 
@@ -53,148 +52,14 @@
         }
 
 
-        /*
-*
-* ==========================================
-* Transparent Navbar
-* ==========================================
-*
-*/
-        .navbar {
-            transition: all 0.4s;
-        }
-
-        .nav-img {
-            padding: 3%;
-            width: 50%;
-        }
-
-        .navbar .nav-link {
-            color: #fff;
-        }
-
-        .navbar .nav-link:hover,
-        .navbar .nav-link:focus {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .navbar .navbar-brand {
-            color: #fff;
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            margin-top: 0;
-        }
-
-        .dropdown-menu li {
-            position: relative;
-            width: 220px;
-        }
-
-        .dropdown-menu .dropdown-submenu {
-            display: none;
-            position: absolute;
-            left: 100%;
-            top: 10px;
-            background-color: whitesmoke;
-            border-radius: 3px;
-            text-align: center;
-            padding-right: 20%;
-        }
-
-        .dropdown-menu>li:hover>.dropdown-submenu {
-            display: block;
-        }
-
-
-        /* Change navbar styling on scroll */
-        .navbar.active {
-            background: #fff;
-            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar.active .nav-link {
-            color: #555;
-        }
-
-        .navbar.active .nav-link:hover,
-        .navbar.active .nav-link:focus {
-            color: #555;
-            text-decoration: none;
-        }
-
-        .navbar.active .navbar-brand {
-            color: #555;
-        }
-
-
-        /* Change navbar styling on small viewports */
-        @media (max-width: 991.98px) {
-            .navbar {
-                background: #fff;
-            }
-
-            .navbar .navbar-brand,
-            .navbar .nav-item .nav-link {
-                color: #555;
-            }
-
-            .navbar .navbar-toggler-icon {
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(11, 12, 12, 10)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-            }
-        }
-
-        .carousel-item {
-            height: 100vh;
-            min-height: 300px;
-            background: no-repeat scroll center scroll;
-            -webkit-background-size: cover;
-            background-size: cover;
-            position: relative;
-            z-index: 1;
-            background-attachment: cover;
-
-        }
-
-        .carousel-item::after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgb(21, 20, 51, 0.8);
-            z-index: 0;
-        }
-
-        .carousel-caption {
-            z-index: 1;
-            top: 55%;
-            transform: translateY(-50%);
-            bottom: initial;
-
-
-        }
-
-        .display-4 {
-            font-weight: 500;
-        }
-
-        .carousel-item img {
-            width: 100%;
-        }
-
-
 
 
         #footer {
             background-color: #25254D;
             color: whitesmoke;
             width: 100%;
-            padding-top: 20%;
-            clip-path: polygon(66% 0, 100% 17%, 100% 100%, 0 100%, 0 0, 30% 17%);
+            padding-top: 10%;
+
         }
 
         .footer-img {
@@ -477,7 +342,7 @@
             cursor: pointer;
             transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
             
-            color: #090839;
+            color: #ffffff;
         }
 
         .card-2:hover .card-body {
@@ -541,16 +406,17 @@
         }
         
         .box-2 {
-            background-color: #bbdefb;
-            color: rgb(5, 53, 111);
+            background-color: #25254D;
+            color: white;
             padding: 3%;
+            
 
         }
 
 
         .box-3 {    
-            background-color: #DEEDFE;
-            color: rgb(5, 53, 111);
+            background-color: #313163;
+            color: white;
             padding: 3%;
         }
 
@@ -570,7 +436,7 @@
             transition: transform .45s ease, background .45s ease;
             overflow: hidden;
             border-radius: 15px;
-            border-color: gainsboro;
+            border-color: rgb(60, 52, 52);
             min-height: 450px;
             width: 300px;
             color: #25254D;
@@ -872,7 +738,7 @@
             }
 
             .form-content .form-items {
-                border: 1px solid white;
+                border: 1px solid #25254D;
                 padding: 40px;
                 display: inline-block;
                 width: 100%;
@@ -898,7 +764,7 @@
             }
 
             .form-content p {
-                color: #fff;
+                color: #25254D;
                 text-align: left;
                 font-size: 17px;
                 font-weight: 300;
@@ -997,6 +863,7 @@
         .webinar-title {
             font-size: 100px;
             font-weight: 30px;
+            color: #25254D;
         }
 
         .web-img
@@ -1008,6 +875,38 @@
     display: block;
     margin-top: 0; 
  }
+
+ .banner-container-1 {
+            background-color: #25254D;
+            color: white;
+            text-align: center;
+            padding: 2%;
+        }
+
+        .b-text {
+            font-size: 15px;
+            text-align: left;
+            padding: 5%;
+            color: rgb(64, 71, 147);
+        }
+
+        .b-img {}
+
+
+
+        .navbar {
+            background-color: #25254D;
+            color: #000000;
+        }
+
+        .navbar-brand img {
+            width: 50%;
+        }
+
+        .nav-item {
+            font-size: large;
+
+        }
     </style>
 
 
@@ -1124,7 +1023,7 @@
                 <h5 class="display-6 banner-title-1">
                     Don't miss our free Webinars!
                 </h5>
-                <p>
+                <p class="b-text">
                     Nexas America's webinars are a convenient way to learn more about our products and how they can
                     benefit your shop. We generally have 2 different types of webinars:
 
@@ -1200,7 +1099,7 @@
                 <br>
                 <br>
                 <div class="seperator">____</div>
-                <h5 class="display-6 ">
+                <h5 class="display-6 banner-title-1  ">
                 You can also view previously recorded webinars on our <a href="#">YouTube channel</a>.
 
                 </h5>
